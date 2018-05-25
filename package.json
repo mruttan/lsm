@@ -1,0 +1,31 @@
+{
+  "name": "lsm",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "test": "NODE_ENV=test meteor test --driver-package=cultofcoders:mocha --port 4000"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.0.0-beta.36",
+    "connect": "^3.6.6",
+    "history": "^4.7.2",
+    "jquery": "^3.3.1",
+    "meteor-node-stubs": "^0.3.2",
+    "moment": "^2.22.0",
+    "react": "^16.3.2",
+    "react-addons-pure-render-mixin": "^15.6.2",
+    "react-bootstrap": "^0.32.1",
+    "react-dom": "^16.3.2",
+    "react-router-dom": "^4.2.2",
+    "shortid": "^2.2.8",
+    "simpl-schema": "^1.4.2"
+  },
+  "devDependencies": {
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "expect": "^1.20.2"
+  },
+  "engines": {
+    "node": "8.11.1"
+  }
+}
