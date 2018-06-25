@@ -1,47 +1,57 @@
 import React from 'react';
-import { Session } from 'meteor/session';
 import { withRouter } from 'react-router-dom';
-import { Button, Carousel, Jumbotron, Grid, Row, Col, Image } from 'react-bootstrap';
 
 
 export class SiteContent extends React.Component {
-  constructor(props) {
-    super(props);
-  }
 
-  render(props) {
+  render() {
     return (
-      <div className="page-content__main">
-        <div>
-          <Jumbotron>
-            <h1>Hello, world!</h1>
-            <p>
-              This is a simple hero unit, a simple jumbotron-style component for calling
-              extra attention to featured content or information.
-                      <div>
-                here I will put more messages with a search bar, or search could go anywhere
-                      </div>
-              <div> within this i shall put welcome messages with pics of product </div>
-            </p>
-            <p>
-              <Button bsStyle="primary">Learn more</Button>
-            </p>
-          </Jumbotron>;
+      <div>
+        <div className="jumbotron text-center">
+          <h1>Hello, world!</h1>
+          <p>this is an example layout for the page I'm tinkering with</p>
         </div>
-        <div className="page-content__grid-images">
-          <Grid>
-            <Row>
-              <Col xs={6} md={4}>
-                <Image src="/images/x.svg" rounded responsive />
-              </Col>
-              <Col xs={6} md={4}>
-                <Image src="/images/x.svg" circle responsive />
-              </Col>
-              <Col xs={6} md={4}>
-                <Image src="/images/x.svg" thumbnail responsive />
-              </Col>
-            </Row>
-          </Grid>;
+        <div className="container content-container">
+          <div className="row">
+            <div className="col-sm-4">
+              <h2>About Me</h2>
+              <h5>Photo of me:</h5>
+              <div className="fakeimg">Fake Image</div>
+              <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+              <h3>Some Links</h3>
+              <p>Lorem ipsum dolor sit ame.</p>
+              <ul className="nav nav-pills flex-column">
+                <li className="nav-item">
+                  <a className="nav-link active" href="#">Active</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#">Link</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#">Link</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link disabled" href="#">Disabled</a>
+                </li>
+              </ul>
+              <hr className="d-sm-none"/>
+            </div>
+            <div className="col-sm-8">
+              <h2>TITLE HEADING</h2>
+              <h5>Title description, Dec 7, 2017</h5>
+              <div className="fakeimg">Fake Image</div>
+              <p>Some text..</p>
+              <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+              <br/>
+              <h2>TITLE HEADING</h2>
+              <h5>Title description, Sep 2, 2017</h5>
+              <div className="fakeimg">Fake Image</div>
+              <p>Some text..</p>
+              <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            </div>
+          </div>
         </div>
       </div>
     );

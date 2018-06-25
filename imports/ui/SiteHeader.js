@@ -1,11 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
-import { Meteor } from 'meteor/meteor';
-import { Session } from 'meteor/session';
-import { withTracker } from 'meteor/react-meteor-data';
+import { Link, withRouter } from 'react-router-dom';
 
-import { Button } from 'react-bootstrap';
 
 
 class SiteHeader extends React.Component {
@@ -14,33 +10,32 @@ class SiteHeader extends React.Component {
   };
 
   render(props) {
-    const navImageSrc = this.props.isNavOpen ? '/images/x.svg' : '/images/bars.svg';
     return (
-      <div className="header">
-        <div className="header__content">
-          <img className="header__nav-toggle" src={navImageSrc} onClick={this.props.handleNavToggle} />
-          <h1 className="header__title">{this.props.title}</h1>
-          <Link to="/" className="button button--link">HOME</Link>
-          <Link to="/" className="button button--link">PRODUCTS</Link>      
-          <Link to="/" className="button button--link">ABOUT</Link>
-          <form className="searchbar">
-            <input placeholder="Search for a Product"></input>
-            <Button bsStyle="primary">Search</Button>
-          </form>
+      <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a className="navbar-brand" href="#">{this.props.title}</a>
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <Link to="/" className="nav-link">Home</Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/" className="nav-link">About</Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/" className="nav-link">Search for Products</Link>
+            </li>
+          </ul>
         </div>
-      </div>
+      </nav>
     );
   }
 }
 
 SiteHeader.propTypes = {
-  title: PropTypes.string.isRequired,
-  handleNavToggle: PropTypes.func.isRequired
+  title: PropTypes.string.isRequired
 }
 
-export default withTracker(() => {
-  return {
-    handleNavToggle: () => Session.set('isNavOpen', !Session.get('isNavOpen')),
-    isNavOpen: Session.get('isNavOpen')
-  };
-})(SiteHeader);
+export default withRouter(SiteHeader);
