@@ -1,0 +1,36 @@
+.carousel {
+  background-color: $body-background-color;
+  display: block;
+  height: auto; // has to be a variable
+  width: 100%;
+  @include desktop {
+    height: 40rem;
+  }
+}
+
+.carousel .item {
+  height: 30rem; // has to adjust based on carousel height, with width always
+                // being 100%
+  width: 100%;
+  @include desktop {
+    height: 40rem;
+    width: 100%;
+  }
+}
+
+.item img {
+  position: absolute;
+  height: 40rem;
+  // width: 1024px;
+  @include desktop {
+    max-width: none;
+    // width: 1024px;
+  }
+}
+
+div .jumbotron {
+  background-color: gold;
+  display: block;
+}
+
+// need to add className="picture1" etc to target img individually

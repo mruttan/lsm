@@ -8,7 +8,7 @@ import { withTracker } from 'meteor/react-meteor-data';
 import { Button } from 'react-bootstrap';
 
 
-class SiteHeader extends React.Component {
+class SiteFooter extends React.Component {
   constructor(props) {
     super(props);
   };
@@ -16,10 +16,10 @@ class SiteHeader extends React.Component {
   render(props) {
     const navImageSrc = this.props.isNavOpen ? '/images/x.svg' : '/images/bars.svg';
     return (
-      <div className="header">
-        <div className="header__content">
-          <img className="header__nav-toggle" src={navImageSrc} onClick={this.props.handleNavToggle} />
-          <h1 className="header__title">{this.props.title}</h1>
+      <div className="footer">
+        <div className="footer__content">
+          <img className="footer__nav-toggle" src={navImageSrc} onClick={this.props.handleNavToggle} />
+          <h1 className="footer__title">{this.props.title}</h1>
           <Link to="/" className="button button--link">HOME</Link>
           <Link to="/" className="button button--link">PRODUCTS</Link>      
           <Link to="/" className="button button--link">ABOUT</Link>
@@ -33,7 +33,7 @@ class SiteHeader extends React.Component {
   }
 }
 
-SiteHeader.propTypes = {
+SiteFooter.propTypes = {
   title: PropTypes.string.isRequired,
   handleNavToggle: PropTypes.func.isRequired
 }
@@ -43,4 +43,4 @@ export default withTracker(() => {
     handleNavToggle: () => Session.set('isNavOpen', !Session.get('isNavOpen')),
     isNavOpen: Session.get('isNavOpen')
   };
-})(SiteHeader);
+})(SiteFooter);

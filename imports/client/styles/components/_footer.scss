@@ -1,27 +1,26 @@
-.header {
-  background: $header-bg;
-  color: $header-color;
+.footer {
+  background: $footer-bg;
+  color: $footer-color;
 }
 
-.header__content {
+.footer__content {
   align-items: center;
   display: flex;
-  height: $header-height;
+  height: $footer-height;
   justify-content: space-between;
   max-width: $site-max-width;
   margin: 0 auto;
   padding: $space;
 }
 
-.header__title {
+.footer__title {
   margin: 0;
 }
 
-.header__nav-toggle {
+.footer__nav-toggle {
   cursor: pointer;
   height: 2rem;
   width: 2rem;
-  
   @include desktop {
     display: none;
   }

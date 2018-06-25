@@ -34,7 +34,7 @@ class ControlledCarousel extends React.Component {
         onSelect={this.handleSelect}
       >
         <Carousel.Item>
-          <img width={900} height={500} alt="900x500" src="/images/x.svg" />
+          <img  src="/images/Pond-Hockey-TestLandscape1.jpg" />
           <Carousel.Caption>
             <h3>First slide label</h3>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
