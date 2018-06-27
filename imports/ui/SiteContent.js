@@ -7,19 +7,14 @@ export class SiteContent extends React.Component {
   render() {
     return (
       <div>
-        <div className="jumbotron text-center">
-          <h1>Hello, world!</h1>
-          <p>this is an example layout for the page I'm tinkering with</p>
+        <div className="jumbotron text-center text-white title-jumbotron">
+          <img className="img-fluid" src="/images/bodyimage.jpg" alt="TitleLogo" />
         </div>
         <div className="container content-container">
           <div className="row">
             <div className="col-sm-4">
-              <h2>About Me</h2>
-              <h5>Photo of me:</h5>
-              <div className="fakeimg">Fake Image</div>
-              <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-              <h3>Some Links</h3>
-              <p>Lorem ipsum dolor sit ame.</p>
+              <h3>Services</h3>
+              <p>I could list services here.</p>
               <ul className="nav nav-pills flex-column">
                 <li className="nav-item">
                   <a className="nav-link active" href="#">Active</a>
@@ -34,18 +29,32 @@ export class SiteContent extends React.Component {
                   <a className="nav-link disabled" href="#">Disabled</a>
                 </li>
               </ul>
+              <h2>About Me</h2>
+              <h5>I could put the google map here</h5>
+              <div className="fakeimg">Fake Image</div>
+              <p>Contact info could go</p>
               <hr className="d-sm-none"/>
             </div>
-            <div className="col-sm-8">
+            <div className="col-sm-4">
+              <div className="fakeimg">I Could display a Service in here</div>
+              <br/>
+              <div className="fakeimg">Example of Service</div>
+            </div>
+            <div className="col-sm-4">
+              <div className="fakeimg">I Could display a Service in here</div>
+              <br/>
+              <div className="fakeimg">Example of Service</div>
+              </div>
+            <div className="col-sm-8 ml-auto">
               <h2>TITLE HEADING</h2>
-              <h5>Title description, Dec 7, 2017</h5>
+              <h5>Example of more info being displayed</h5>
               <div className="fakeimg">Fake Image</div>
               <p>Some text..</p>
               <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
               <br/>
               <h2>TITLE HEADING</h2>
-              <h5>Title description, Sep 2, 2017</h5>
+              <h5>Example of more info being displayed</h5>
               <div className="fakeimg">Fake Image</div>
               <p>Some text..</p>
               <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor

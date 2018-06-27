@@ -18,16 +18,36 @@ class SiteHeader extends React.Component {
         </button>
         <div className="collapse navbar-collapse" id="collapsibleNavbar">
           <ul className="navbar-nav">
-            <li className="nav-item">
-              <Link to="/" className="nav-link">Home</Link>
+            <li className="nav-item dropdown">
+              <a className="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                Services
+              </a>
+              <div className="dropdown-menu">
+                <a className="dropdown-item" href="#">Heat Transfer</a>
+                <a className="dropdown-item" href="#">Embroidery</a>
+                <a className="dropdown-item" href="#">Custom Apparel</a>
+                <a className="dropdown-item" href="#">Screen Printing</a>
+                <a className="dropdown-item" href="#">Fulfillment</a>
+                <a className="dropdown-item" href="#">E-Commerce</a>
+              </div>
             </li>
             <li className="nav-item">
-              <Link to="/" className="nav-link">About</Link>
+              <Link to="/" className="nav-link">Catalogues</Link>
             </li>
             <li className="nav-item">
-              <Link to="/" className="nav-link">Search for Products</Link>
+              <Link to="/" className="nav-link">Contact</Link>
             </li>
           </ul>
+          <div class="input-group ml-auto col-sm-4 custom-nav-search">
+            <input type="text" class="form-control" placeholder="Search"/>
+            <div class="input-group-append">
+              <button class="btn btn-success" type="submit">Go</button>
+            </div>
+          </div>
+          {/* <form class="form-inline ml-auto" action="">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search"/>
+            <button class="btn btn-success" type="submit">Search</button>
+          </form> */}
         </div>
       </nav>
     );
