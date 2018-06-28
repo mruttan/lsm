@@ -8,7 +8,7 @@ export class SiteContent extends React.Component {
     return (
       <div>
         <div className="jumbotron text-center text-white title-jumbotron">
-          <img className="img-fluid" src="/images/bodyimage.jpg" alt="TitleLogo" />
+          <img className="img-fluid image-jumbotron pb-2" src="/images/Lions-Share-Logo-GoldHead.jpg" alt="TitleLogo" />
         </div>
         <div className="container content-container">
           <div className="row">

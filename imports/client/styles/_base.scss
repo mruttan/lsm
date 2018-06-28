@@ -19,12 +19,24 @@
 
 // guess you just use !important to override bootstrap 4 classes
 .title-jumbotron {
-  background-color: black !important;
+  background-color: white !important;
   border-radius: 0 !important;
 }
 
+.image-jumbotron {
+  max-height: 5rem !important;
+}
+
+.custom-nav {
+  flex-grow: .60 !important;
+}
+
+.custom-navbar-logo {
+  max-height: 4rem !important;
+  max-width: 75% !important;
+}
 .custom-nav-search {
-  max-width: 575px !important;
-  min-width: 221px !important;
+  // max-width: 575px !important;
+  min-width: 10rem !important;
   padding: 0 !important;
 }
