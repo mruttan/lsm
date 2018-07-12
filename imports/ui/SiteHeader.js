@@ -11,12 +11,12 @@ class SiteHeader extends React.Component {
 
   render(props) {
     return (
-      <nav className="navbar navbar-expand-sm bg-white navbar-light justify-content-center">
+      <nav className="navbar navbar-expand-md bg-white navbar-light justify-content-center">
         <img className="img-fluid custom-navbar-logo" src="/images/Lions-Share-Logo-GoldHead.jpg" alt="TitleLogo" />
         <button className="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse custom-nav ml-sm-5" id="collapsibleNavbar">
+        <div className="collapse navbar-collapse custom-nav ml-lg-5" id="collapsibleNavbar">
           <ul className="navbar-nav">
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
@@ -38,7 +38,7 @@ class SiteHeader extends React.Component {
               <Link to="/" className="nav-link">Contact</Link>
             </li>
           </ul>
-          <div className="input-group ml-auto col-sm-6 custom-nav-search">
+          <div className="input-group ml-auto col-md-5 col-lg-6 custom-nav-search">
             <input type="text" className="form-control" placeholder="Search Products"/>
             <div className="input-group-append">
               <button className="btn btn-success" type="submit">Go</button>

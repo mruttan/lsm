@@ -12,16 +12,17 @@ class AnimatedCarousel extends React.Component {
         </ol>
     
         <div className="carousel-inner">
-    
+          {/* here is carousel tinkering, need to try to have an accurate bg/pics and get one slide down */}
           <div className="carousel-item active">
             <img src="/images/Golf-Course-TestLandscape2.jpg" alt="Los Angeles" width="1100" height="500"/>
-            <div className="carousel-caption d-md-block">
-              <h3 data-animation="animated bounceInLeft">
-                This is the caption for slide 1
-              </h3>
-              <h3 data-animation="animated bounceInRight">
-                This is the caption for slide 1
-              </h3>
+            <div className="carousel-caption d-flex justify-content-centered">
+              
+              <img className="bottom" id="img-goretex" src="/images/goretex-jkt.png" data-animation="animated bounceInRight"/>
+              
+              <img className="top" id="img-goretex" src="/images/goretex-jkt.png" data-animation="animated bounceInRight" />
+
+              <img  id="img-goretex" src="/images/goretex-jkt.png" data-animation="animated bounceInRight" />
+            
               <button className="btn btn-primary btn-lg" data-animation="animated zoomInUp">Button</button>
             </div>
           </div>
