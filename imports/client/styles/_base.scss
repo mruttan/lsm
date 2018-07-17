@@ -54,20 +54,39 @@
 .carousel-caption img:nth-child(3) {
   animation-delay: 3s;
 }
-.carousel-caption button {
-  animation-delay: 3s;
+.carousel-caption .logo-right button {
+  animation-delay: 4s;
 }
 
 
 #img-goretex {
   width: 31% !important;
-  height: 19% !important;
+  height: 19%;
 }
 
+// .container {
+//   position: relative !important;
+// }
 
-img .top {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
+.bottom-left {
+  z-index: 1 !important;
+  // height: inherit !important;
+}
+
+.top {
+  position: absolute !important;
+  z-index: 2 !important;
+  left: 15% !important; 
+  height: inherit !important;
+}
+
+.bottom-right {
+  z-index: 1 !important;
+}
+
+//works for desktop but need to add a media query - is slightly out of place in mobile
+.logo-right { 
+  z-index: 1 !important;
+  margin-left: 10% !important;
+  margin-top: 15% !important;
 }

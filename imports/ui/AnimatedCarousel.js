@@ -17,17 +17,53 @@ class AnimatedCarousel extends React.Component {
             <img src="/images/Golf-Course-TestLandscape2.jpg" alt="Los Angeles" width="1100" height="500"/>
             <div className="carousel-caption d-flex justify-content-centered">
               
-              <img className="bottom" id="img-goretex" src="/images/goretex-jkt.png" data-animation="animated bounceInRight"/>
+              <img className="bottom-left" id="img-goretex" src="/images/goretex-jkt.png" data-animation="animated bounceInRight"/>
               
               <img className="top" id="img-goretex" src="/images/goretex-jkt.png" data-animation="animated bounceInRight" />
 
-              <img  id="img-goretex" src="/images/goretex-jkt.png" data-animation="animated bounceInRight" />
-            
-              <button className="btn btn-primary btn-lg" data-animation="animated zoomInUp">Button</button>
+              <img className="bottom-right" id="img-goretex" src="/images/goretex-jkt.png" data-animation="animated bounceInRight" />
+
+              <div className="logo-right">
+                <button className="btn btn-primary btn-lg" data-animation="animated zoomInUp">Logo</button>
+              </div>
             </div>
           </div>
-    
+
           <div className="carousel-item">
+            <img src="/images/Golf-Course-TestLandscape2.jpg" alt="Los Angeles" width="1100" height="500"/>
+            <div className="carousel-caption d-flex justify-content-centered">
+              
+              <img className="bottom-left" id="img-goretex" src="/images/goretex-jkt.png" data-animation="animated bounceInRight"/>
+              
+              <img className="top" id="img-goretex" src="/images/goretex-jkt.png" data-animation="animated bounceInRight" />
+
+              <img className="bottom-right" id="img-goretex" src="/images/goretex-jkt.png" data-animation="animated bounceInRight" />
+
+              <div className="logo-right">
+                <button className="btn btn-primary btn-lg" data-animation="animated zoomInUp">Logo</button>
+              </div>
+            </div>
+          </div>
+
+          <div className="carousel-item">
+            <img src="/images/Golf-Course-TestLandscape2.jpg" alt="Los Angeles" width="1100" height="500"/>
+            <div className="carousel-caption d-flex justify-content-centered">
+              
+              <img className="bottom-left" id="img-goretex" src="/images/goretex-jkt.png" data-animation="animated bounceInRight"/>
+              
+              <img className="top" id="img-goretex" src="/images/goretex-jkt.png" data-animation="animated bounceInRight" />
+
+              <img className="bottom-right" id="img-goretex" src="/images/goretex-jkt.png" data-animation="animated bounceInRight" />
+
+              <div className="logo-right">
+                <button className="btn btn-primary btn-lg" data-animation="animated zoomInUp">Logo</button>
+              </div>
+            </div>
+          </div>
+
+          
+    
+          {/* <div className="carousel-item">
             <img src="/images/Pond-Hockey-TestLandscape1.jpg" alt="New York" width="1100" height="500"/>
             <div className="carousel-caption d-md-block">
               <h3 data-animation="animated bounceInLeft">
@@ -51,7 +87,7 @@ class AnimatedCarousel extends React.Component {
               </h3>
               <button className="btn btn-primary btn-lg" data-animation="animated zoomInUp">Button</button>
             </div>
-          </div>
+          </div> */}
         </div>
     
         <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

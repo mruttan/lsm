@@ -1,7 +1,7 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 
-
+import ContactMap from './ContactMap';
 export class SiteContent extends React.Component {
 
   render() {
@@ -29,11 +29,7 @@ export class SiteContent extends React.Component {
                   <a className="nav-link disabled" href="#">Disabled</a>
                 </li>
               </ul>
-              <h2>About Me</h2>
-              <h5>I could put the google map here</h5>
-              <div className="fakeimg">Fake Image</div>
-              <p>Contact info could go</p>
-              <hr className="d-sm-none"/>
+              <ContactMap/>
             </div>
             <div className="col-sm-4">
               <div className="fakeimg">I Could display a Service in here</div>
