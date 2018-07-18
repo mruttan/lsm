@@ -7,7 +7,8 @@ export class ContactMap extends React.Component {
       <div>
         <h2>About Me</h2>
           <h5>ContactMap will go here</h5>
-          <div className="fakeimg">Fake Image</div>
+          <div id="map"></div>
+          
           <p>Contact info could go</p>
           <hr className="d-sm-none"/>
       </div>
