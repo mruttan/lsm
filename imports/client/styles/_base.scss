@@ -1,18 +1,33 @@
-.content-container {
-  margin-top: 30px;
-}
-
-.carousel-inner img {
-  width: 100%;
-  height: 100%;
-  max-height: 452px;
-}
 
 .fakeimg {
   height: 200px;
   background: #aaa;
 }
 
+.fakeimg2{
+  height: 200px;
+  background: green;
+}
+
+.fakeimg3 {
+  height: 200px;
+  background: blue;
+}
+
+.fakeimg4 {
+  height: 200px;
+  background: red;
+}
+
+.fakeimg5 {
+  height: 200px;
+  background: purple;
+}
+
+.fakeimg6 {
+  height: 200px;
+  background: orange;
+}
 .site-footer {
   margin-bottom: 0;
 }
@@ -42,58 +57,19 @@
   padding: 0 !important;
 }
 
-//Carousel Animations
-.carousel-caption img:first-child {
-  animation-delay: 1s;
-}
 
-.carousel-caption img:nth-child(2) {
-  animation-delay: 2s;
-}
-
-.carousel-caption img:nth-child(3) {
-  animation-delay: 3s;
-}
-
-.carousel-caption .logo-right button {
-  animation-delay: 4s;
-}
-
-
-#img-goretex {
-  width: 31% !important;
-  height: 19%;
-}
-
-// .container {
-//   position: relative !important;
-// }
-
-.bottom-left {
-  z-index: 1 !important;
-  // height: inherit !important;
-}
-
-.top {
-  position: absolute !important;
-  z-index: 2 !important;
-  left: 15% !important; 
-  height: inherit !important;
-}
-
-.bottom-right {
-  z-index: 1 !important;
-}
-
-//works for desktop but need to add a media query - is slightly out of place in mobile
-.logo-right { 
-  z-index: 1 !important;
-  margin-left: 10% !important;
-  margin-top: 15% !important;
-}
 
 #map {
   width: 100%;
   height: 400px;
   background-color: grey;
 }
+
+#promocan-search {
+  min-height:800px;
+  width:100%;
+  border: none;
+  margin-top: 70px;
+}
+
+
