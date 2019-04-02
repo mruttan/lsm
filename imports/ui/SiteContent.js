@@ -12,6 +12,16 @@ export class SiteContent extends React.Component {
         </div>
         <div className="container content-container">
           <div className="row">
+            <div className="col ml-auto">
+              <h2>Lion's Share Hockey</h2>
+              <h5>Represent Your Team, Your Way</h5>
+              <div className="fakeimg">Picture of the showroom store here</div>
+              <p>Offering a variety of top brands and apparel, Lion's Share has you covered for all your sportswear needs.</p>
+              <p>Lion's Share offers a wide range of promotional products, take a look at our current products, or if you have something else in mind for your team or company, give us a call, we'd love to help you out.</p>
+              <br/>
+            </div>
+          </div>
+          <div className="row">
             <div className="col-sm-4">
               <ContactMap/>
               <hr/>
@@ -47,24 +57,7 @@ export class SiteContent extends React.Component {
               <br/>
               <div className="fakeimg6">Example of Service</div>
               </div>
-            <div className="col-sm-8 ml-auto">
-              <h2>TITLE HEADING</h2>
-              <h5>Example of more info being displayed</h5>
-              <div className="fakeimg">Fake Image</div>
-              <p>Some text..</p>
-              <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-              {/* <br/>
-              <h2>TITLE HEADING</h2>
-              <h5>Example of more info being displayed</h5>
-              <div className="fakeimg">Fake Image</div>
-              <p>Some text..</p>
-              <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p> */}
-            </div>
-            <div className="col-sm-12 ml-auto">
-              <iframe id="promocan-search" frameBorder="0" src="https://embedcode-10519.promocan.com/en_ca/"></iframe>
-            </div>
+  
           </div>
         </div>
       </div>

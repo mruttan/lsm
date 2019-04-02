@@ -29,7 +29,7 @@ class AnimatedCarousel extends React.Component {
             </div>
           </div>
 
-          {/* <div className="carousel-item">
+          <div className="carousel-item">
             <img className="slide-bg" src="/images/hockey-rink.jpg" alt="Los Angeles" width="1100" height="500"/>
             <div className="carousel-caption d-flex justify-content-centered">
               
@@ -59,7 +59,7 @@ class AnimatedCarousel extends React.Component {
                 <button className="btn btn-primary btn-lg" data-animation="animated zoomInUp">Logo</button>
               </div>
             </div>
-          </div> */}
+          </div>
 
           
     
@@ -88,6 +88,8 @@ class AnimatedCarousel extends React.Component {
               <button className="btn btn-primary btn-lg" data-animation="animated zoomInUp">Button</button>
             </div>
           </div> */}
+
+          
         </div>
     
         <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
