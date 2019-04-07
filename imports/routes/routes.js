@@ -6,6 +6,7 @@ import { Session } from 'meteor/session';
 
 import HomePage from '../ui/HomePage';
 import Contact from '../ui/Contact';
+import Products from '../ui/Products';
 
 export const history = createHistory();
 
@@ -26,6 +27,7 @@ export const AppRouter = () => (
       <Switch>
         <Route path="/" component={HomePage} exact={true} />
         <Route path="/contact" component={Contact} />
+        <Route path="/products" component={Products} />
       </Switch>
       <ChangeTracker />
     </div>

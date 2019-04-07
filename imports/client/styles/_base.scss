@@ -30,6 +30,7 @@
 }
 .site-footer {
   margin-bottom: 0;
+  margin-top: 4rem;
 }
 
 // guess you just use !important to override bootstrap 4 classes
@@ -37,6 +38,8 @@
   background-color: white !important;
   border-radius: 0 !important;
 }
+
+
 
 .image-jumbotron {
   max-height: 5rem !important;
@@ -65,11 +68,6 @@
   background-color: grey;
 }
 
-#promocan-search {
-  min-height:800px;
-  width:100%;
-  border: none;
-  margin-top: 70px;
+.list-group-flush .list-group-item:first-child {
+  border-top: 0 !important;
 }
-
-
