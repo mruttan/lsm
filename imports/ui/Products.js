@@ -3,8 +3,7 @@ import { withRouter } from 'react-router-dom';
 
 import SiteFooter from './SiteFooter';
 import SiteHeader from './SiteHeader';
-import ContactMap from './ContactMap';
-
+import ProductList from './ProductList';
 
 export class Products extends React.Component {
   constructor(props) {
@@ -38,6 +37,8 @@ export class Products extends React.Component {
                     </ul>
                 </div>
                 <div className="col-sm-9">
+                    {/* product list goes here, going to build it up */}
+                    <ProductList />
                     <div>
                         <div className="fakeimg">I Could display a Service in here</div>
                         <br/>
