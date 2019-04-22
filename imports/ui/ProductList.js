@@ -1,23 +1,31 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import { Meteor } from 'meteor/meteor';
+import { withTracker } from 'meteor/react-meteor-data';
 
 import ProductDetail from './ProductDetail';
-import { IMAGES } from './StaticData';
+import { PList } from '../collections/PList';
 
-export const ProductList = () => {
+export const ProductList = (props) => {
     
-    const RenderedImages = IMAGES.map(image => {
-        return <ProductDetail key={image.title} image={image} />
+    console.log(props.plist);
+    const RenderedImages = props.plist.map(image => {
+        return <ProductDetail key={image._id} image={image} />
     });
 
     return(
-        <ul>
+        <div>
             {RenderedImages}
-        </ul>
-        
+        </div>
     );
 }
 
+ProductList.propTypes = {
+    plist: PropTypes.array.isRequired
+}
 
-
-export default withRouter(ProductList);
+export default withTracker(() => {
+    Meteor.subscribe('plist');
+    
+    return { plist: PList.find({}).fetch() };
+})(ProductList);

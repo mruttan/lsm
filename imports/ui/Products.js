@@ -39,13 +39,6 @@ export class Products extends React.Component {
                 <div className="col-sm-9">
                     {/* product list goes here, going to build it up */}
                     <ProductList />
-                    <div>
-                        <div className="fakeimg">I Could display a Service in here</div>
-                        <br/>
-                        <div className="fakeimg2">Example of Service</div>
-                        <br/>
-                        <div className="fakeimg3">Example of Service</div>
-                    </div>
                     <div className="pt-5">
                         {/* Need to put in pagination */}
                         <ul className="pagination">
