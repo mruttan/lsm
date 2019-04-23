@@ -2,19 +2,31 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
 
-export const ProductDetail = (props) => {
+export const ProductDetail = ({ product }) => {
+    const { title, link } = product;
   
     return(
-        <li>
+        // <li>
+        //     <div>
+        //         <img src={props.product.link} />
+        //     </div>
+        //     <div>
+        //         <h4>
+        //             {props.product.title}
+        //         </h4>
+        //     </div>
+        // </li>
+
+        <div>
+            <img className="product-image" src={link} />
             <div>
-                <img src={props.image.link} />
+                <h3>{title}</h3>
+                {/* <ul className="list-group">
+                    <li className="list-group-item">Email: {title}</li>
+                    <li className="list-group-item">Phone: {title}</li>
+                </ul> */}
             </div>
-            <div>
-                <h4>
-                    {props.image.title}
-                </h4>
-            </div>
-        </li>
+        </div>
     );
 
 }

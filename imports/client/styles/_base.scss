@@ -71,3 +71,15 @@
 .list-group-flush .list-group-item:first-child {
   border-top: 0 !important;
 }
+
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.product-image {
+  max-width: 300px;
+}
+
