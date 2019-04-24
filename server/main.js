@@ -16,7 +16,20 @@ Meteor.startup(() => {
     }
   }
 
-  Meteor.publish('plist', function() {
-    return PList.find({}, { limit: 20 });
-  })
+  Meteor.publish('plist', function(per_page) {
+    return PList.find({}, { limit: per_page, skip: 1 });
+  });
+
+  // Meteor.publish('plist', function(skipCount) {
+  //   var positiveIntegerCheck = Match.Where(function(x) {
+  //     positiveIntegerCheck(x, Match.Integer);
+  //     return x >= 0;
+  //   });
+  //   positiveIntegerCheck(skipCount, positiveIntegerCheck);
+
+  //   return PList.find({}, {
+  //     limit: 1, //records to show per page
+  //     skip: skipCount
+  //   })
+  // });
 });
