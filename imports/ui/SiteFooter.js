@@ -1,5 +1,5 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 
 class SiteFooter extends React.Component {
   render() {
@@ -8,20 +8,24 @@ class SiteFooter extends React.Component {
         <div className="container-fluid">
           <div className="row">
             <div className="col-sm">
-              <h5>Information</h5>
-              <p>Example of what can be shown here</p>
+              <Link to="/">
+                <h5>Home</h5>
+              </Link>
             </div>
             <div className="col-sm">
-              <h5>Customer Service</h5>
-              <p>Example of what can be shown here</p>
+              <Link to="/">
+                <h5>Services</h5>
+              </Link>
             </div>
             <div className="col-sm">
-              <h5>Extras</h5>
-              <p>Example of what can be shown here</p>
+              <Link to="/products">
+                <h5>Products</h5>
+              </Link>
             </div>
             <div className="col-sm">
-              <h5>Contact</h5>
-              <p>Example of what can be shown here</p>
+              <Link to="/contact">
+                <h5>Contact</h5>
+              </Link>
             </div>
           </div>
         </div>

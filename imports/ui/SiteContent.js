@@ -1,8 +1,22 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 
-import ContactMap from './ContactMap';
+import { STATIC_DATA } from './StaticData';
+import HomePageProdList from './HomePageProdList';
+
 export class SiteContent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+        homepage_prods: []
+    }
+  }
+
+  componentWillMount() {
+    this.setState({
+      homepage_prods: STATIC_DATA
+    });
+  }
 
   render() {
     return (
@@ -19,32 +33,38 @@ export class SiteContent extends React.Component {
               <p>Offering a variety of top brands and apparel, Lion's Share has you covered for all your sportswear needs.</p>
               <p>Lion's Share offers a wide range of promotional products, take a look at our current products, or if you have something else in mind for your team or company, give us a call, we'd love to help you out.</p>
               <div className="float-right pt-2 pb-4">
-                <a className="page-link" href="#">Learn More About Us...</a>
+                <Link to="/contact" className="page-link">Contact Us...</Link>
               </div>
             </div>
           </div>
-          <div className="row no-gutters">
+          <div className="row col">
+            <h5>Services</h5>
+          </div>
+          <div className="row col-12">
             <div className="col">
-              <div className="fakeimg">I Could display a Service in here1</div>
-              <br/>
-              <div className="fakeimg2">Example of Service2</div>
-              <br/>
-              <div className="fakeimg3">Example of Service3</div>
+              <div className="fakeimg">1st service</div>
             </div>
             <div className="col">
-              <div className="fakeimg4">I Could display a Service in here4</div>
-              <br/>
-              <div className="fakeimg5">Example of Service5</div>
-              <br/>
-              <div className="fakeimg6">Example of Service6</div>
+              <div className="fakeimg2">2nd service</div>
             </div>
-
+            <div className="col">
+              <div className="fakeimg3">3rd service</div>
+            </div>
           </div>
-        </div>
-        <div className="container">
-          <div className="float-right pt-4">
-            <a class="page-link" href="#">See More Products...</a>
+          <div className="row col-3 float-right pt-4 pb-4">
+            <a className="page-link" href="#">See More Services...</a>
           </div>
+          
+          <div className="row col">
+            <h5>Products</h5>
+          </div>
+          <div className="row col-12">
+            <HomePageProdList homepage_prods={this.state.homepage_prods} />
+          </div>
+          <div className="row col-3 float-right pt-4 pb-4">
+            <Link to="/products" className="page-link">See More Products...</Link>
+          </div>
+        
         </div>
       </div>
     );
