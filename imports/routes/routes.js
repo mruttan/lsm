@@ -27,6 +27,7 @@ export const AppRouter = () => (
       <Switch>
         <Route path="/" component={HomePage} exact={true} />
         <Route path="/contact" component={Contact} />
+  
         <Route path="/products" component={Products} />
       </Switch>
       <ChangeTracker />
