@@ -8,6 +8,7 @@
   "dependencies": {
     "@babel/runtime": "^7.0.0-beta.36",
     "connect": "^3.6.6",
+    "google-maps-react": "^2.0.2",
     "history": "^4.7.2",
     "jquery": "^3.3.1",
     "lodash": "^4.11.1",
