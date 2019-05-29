@@ -15,15 +15,9 @@ export class Contact extends React.Component {
     return (
       <div>
         <SiteHeader title="LSM" />
-        
         <div className="container content-container">
-          <div className="row">
-            <div className="col ml-auto">
-                <h1>YOU MADE IT!!!</h1>
-            </div>
-          </div>
           <div className="row pb-5">
-            <div className="col-sm-6">
+            <div className="col-sm-3">
               <h3>Contact</h3>
               <ul className="nav nav-pills flex-column">
                 <li className="nav-item">
@@ -42,27 +36,11 @@ export class Contact extends React.Component {
                 </li>
               </ul>
             </div>
-            <div className="col-sm-6">
+            <div className="col-sm-9">
               <ContactMap/>
             </div>
-            {/* <div className="col-sm-4">
-              <div className="fakeimg">I Could display a Service in here</div>
-              <br/>
-              <div className="fakeimg2">Example of Service</div>
-              <br/>
-              <div className="fakeimg3">Example of Service</div>
-            </div>
-            <div className="col-sm-4">
-              <div className="fakeimg4">I Could display a Service in here</div>
-              <br/>
-              <div className="fakeimg5">Example of Service</div>
-              <br/>
-              <div className="fakeimg6">Example of Service</div>
-            </div> */}
-  
           </div>
         </div>
-      
         <SiteFooter/>
       </div>
     );

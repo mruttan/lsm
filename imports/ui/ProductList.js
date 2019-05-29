@@ -15,15 +15,15 @@ export class ProductList extends React.Component {
 
     componentWillMount() {
         this.page = 1;
-        this.setState({ 
+        this.setState({
             subset_prods: this.props.allprods.filter(prod => prod.page == this.page)
         });
     }
-    
+
     //able to pass array straight up, now can i manip via state and array size? HELL YEA i can
-    
-    handleButtonClickNext() {        
-        if(this.page >= this.props.allprods.length) {
+
+    handleButtonClickNext() {
+        if (this.page >= this.props.allprods.length / 3) {
             this.page -= 1;
         }
         this.page += 1;
@@ -33,44 +33,77 @@ export class ProductList extends React.Component {
         console.log(this.page);
     }
 
+    handleButtonClickPrevious() {
+        if (this.page <= 1) {
+            this.page += 1;
+        }
+        this.page -= 1;
+        this.setState({
+            subset_prods: this.props.allprods.filter(prod => prod.page == this.page)
+        });
+        console.log(this.page);
+    }
+
+    handleButtonClickJackets() {
+        this.setState({
+            subset_prods: this.props.allprods.filter(prod => prod.category == 'jacket')
+        })
+    }
+
     render() {
-        return(
+        return (
             <div>
-                <div className="product-list">
-                    {this.state.subset_prods.map(product => 
-                        <ProductDetail key={product.title} product={product}/>
-                    )}
-                </div>
-                {/* <button onClick={this.handleButtonClickPrevious.bind(this)} 
-                    className="btn btn-primary">
-                    Load Previous...
-                </button> */}
-                <button onClick={this.handleButtonClickNext.bind(this)} 
-                    className="btn btn-primary">
-                    Load Next...
-                </button>
-
-                <div className="pt-5">
-                        {/* Need to put in pagination */}
-                        <ul className="pagination">
-                            <li className="page-item">
-                                <a className="page-link" href="#">Previous</a>
-                            </li>
-                            <li className="page-item active">
-                                <a className="page-link" href="#">1</a>
-                            </li>
-                            <li className="page-item">
-                                <a className="page-link" href="#">2</a>
-                            </li>
-                            <li className="page-item">
-                                <a className="page-link" href="#">3</a>
-                            </li>
-                            <li className="page-item">
-                                <a className="page-link" href="#">Next</a>
-                            </li>
-                        </ul>
+                <div className="row text-center">
+                    <div className="col-4">
+                        <button onClick={this.handleButtonClickJackets.bind(this)}
+                            className="btn btn-link">
+                            Apparel
+                        </button>
                     </div>
-
+                    <div className="col-4">
+                        <button onClick={this.handleButtonClickJackets.bind(this)}
+                            className="btn btn-link">
+                            Headwear
+                        </button>
+                    </div>
+                    <div className="col-4">
+                        <button onClick={this.handleButtonClickJackets.bind(this)}
+                            className="btn btn-link">
+                            Bags
+                        </button>
+                    </div>
+                </div>
+                <div className="row text-center">
+                    <div className="col-4">
+                        <button onClick={this.handleButtonClickJackets.bind(this)}
+                            className="btn btn-link">
+                            Drinkware
+                        </button>
+                    </div>
+                    <div className="col-4">
+                        <button onClick={this.handleButtonClickPrevious.bind(this)}
+                            className="btn btn-link">
+                            Office/Technology (also button previous for testing)
+                        </button>
+                    </div>
+                    <div className="col-4">
+                        <button onClick={this.handleButtonClickNext.bind(this)}
+                            className="btn btn-link">
+                            Writing (also button next for testing)
+                        </button>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-12">
+                        <div className="row pt-4 pb-4 d-flex justify-content-center">
+                            <div className="product-list">
+                                {this.state.subset_prods.map(product =>
+                                    <ProductDetail key={product.title} product={product} />
+                                )}
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         );
     }
@@ -81,10 +114,10 @@ export default withTracker(() => {
     //Meteor.subscribe('plist', PAGE_NUM);
 
 
-    return { 
+    return {
         //plist: PList.find({}).fetch()
     };
-    // return { plist: PList.find({
+    // return {plist: PList.find({
     //     page: {
     //         $eq: PAGE_NUM
     //     }
@@ -92,11 +125,11 @@ export default withTracker(() => {
 })(ProductList);
 
 
-//need to get pagination working with react/meteor
-//either need to use session to add a selected class, or use meteor methods on
-//the pagination buttons
+                //need to get pagination working with react/meteor
+                //either need to use session to add a selected class, or use meteor methods on
+                //the pagination buttons
 
-//going to try using a session variable to display first 10-20 articles per page,
-//adding a "page" value to each article.
+                //going to try using a session variable to display first 10-20 articles per page,
+                //adding a "page" value to each article.
 
 //try getting info in Products.js, and passing it down to ProductList via props.

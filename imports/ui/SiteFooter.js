@@ -13,7 +13,12 @@ class SiteFooter extends React.Component {
               </Link>
             </div>
             <div className="col-sm">
-              <Link to="/">
+              <Link to="/about">
+                <h5>About Us</h5>
+              </Link>
+            </div>
+            <div className="col-sm">
+              <Link to="/services">
                 <h5>Services</h5>
               </Link>
             </div>

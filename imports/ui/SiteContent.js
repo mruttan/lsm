@@ -21,17 +21,33 @@ export class SiteContent extends React.Component {
   render() {
     return (
       <div>
-        <div className="jumbotron text-center text-white title-jumbotron">
-          <img className="img-fluid image-jumbotron pb-2" src="/images/Lions-Share-Logo-GoldHead.jpg" alt="TitleLogo" />
+        <div className="container">
+          <div className="row">
+            <div className="jumbotron text-center text-white title-jumbotron">
+              <img className="img-fluid image-jumbotron pb-2 col-sm-6" src="/images/Lions-Share-Logo-GoldHead.jpg" alt="TitleLogo" />
+              <img className="img-fluid image-jumbotron pb-2 col-sm-6 lsmhockeylogo" src="/images/logos/LionsShareHockeyLogo.jpg" alt="TitleLogo" />
+            </div>
+          </div>
         </div>
         <div className="container">
           <div className="row">
             <div className="col mx-auto">
-              <h2>Lion's Share Hockey</h2>
-              <h5>Represent Your Team, Your Way</h5>
-              <div className="fakeimg">Picture of the showroom store here</div>
-              <p>Offering a variety of top brands and apparel, Lion's Share has you covered for all your sportswear needs.</p>
-              <p>Lion's Share offers a wide range of promotional products, take a look at our current products, or if you have something else in mind for your team or company, give us a call, we'd love to help you out.</p>
+              <p>
+                  At Lion’s Share our goal is to help you increase your brand's visibility, while generating the highest return on your investment.  
+                  Our friendly experienced team has access to thousands of quality promotional products.  We will take the time to define your 
+                  requirements, then make suggestions to maximize the impact of your custom order.
+              </p>
+              <p>
+                  We practice excellent customer service in each detail to meet all of your needs and earn your trust.
+              </p>
+              <p>
+                  We also offer quality Heat transfer, screen printing and embroidery!
+              </p>
+              <p>
+                  We specialize in custom hockey association programs for apparel and uniforms.  Starting with putting together a 
+                  proposed program, pricing and terms, to fittings to production and finally delivery!  We have a full showroom and
+                      store to accommodate our hockey association members.
+              </p>
               <div className="float-right pt-2 pb-4">
                 <Link to="/contact" className="page-link">Contact Us...</Link>
               </div>
@@ -41,18 +57,18 @@ export class SiteContent extends React.Component {
             <h5>Services</h5>
           </div>
           <div className="row col-12">
-            <div className="col">
-              <div className="fakeimg">1st service</div>
+            <div className="col-sm-4">
+              <img className="service-image" src="/images/services/heatpress.png" />
             </div>
-            <div className="col">
-              <div className="fakeimg2">2nd service</div>
+            <div className="col-sm-4">
+              <img className="service-image" src="/images/services/embroidery.jpg" />
             </div>
-            <div className="col">
-              <div className="fakeimg3">3rd service</div>
+            <div className="col-sm-4">
+              <img className="service-image" src="/images/services/customapparrel.jpg" />
             </div>
           </div>
           <div className="row col-3 float-right pt-4 pb-4">
-            <a className="page-link" href="#">See More Services...</a>
+            <Link to="/services" className="page-link">See More Services...</Link>
           </div>
           
           <div className="row col">

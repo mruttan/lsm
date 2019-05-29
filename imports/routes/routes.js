@@ -1,12 +1,13 @@
-import { Meteor } from 'meteor/meteor';
 import React from 'react';
 import { Router, Route, Switch, withRouter } from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
 import { Session } from 'meteor/session';
 
-import HomePage from '../ui/HomePage';
+import AboutUs from '../ui/AboutUs';
 import Contact from '../ui/Contact';
+import HomePage from '../ui/HomePage';
 import Products from '../ui/Products';
+import Services from '../ui/Services';
 
 export const history = createHistory();
 
@@ -26,8 +27,9 @@ export const AppRouter = () => (
     <div>
       <Switch>
         <Route path="/" component={HomePage} exact={true} />
+        <Route path="/about" component={AboutUs} />
         <Route path="/contact" component={Contact} />
-  
+        <Route path="/services" component={Services} />
         <Route path="/products" component={Products} />
       </Switch>
       <ChangeTracker />

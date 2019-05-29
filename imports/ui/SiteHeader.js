@@ -15,19 +15,25 @@ class SiteHeader extends React.Component {
         <Link to="/">
           <img className="img-fluid custom-navbar-logo" src="/images/Lions-Share-Logo-GoldHead.jpg" alt="TitleLogo" />
         </Link>
+        <Link to="/">
+          <img className="img-fluid custom-navbar-logo lsmhockeylogo pr-5" src="/images/logos/LionsShareHockeyLogo.jpg" alt="TitleLogo" />
+        </Link>
         <button className="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse custom-nav ml-lg-5" id="collapsibleNavbar">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link to="/" className="nav-link">Services (currently no services page)</Link>
+              <Link to="/about" className="nav-link">About Us</Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/services" className="nav-link">Services</Link>
             </li>
             <li className="nav-item">
               <Link to="/products" className="nav-link">Products</Link>
             </li>
             <li className="nav-item">
-              <Link to="/contact" className="nav-link">Contact (map doesnt load until refresh, need to fix)</Link>
+              <Link to="/contact" className="nav-link">Contact</Link>
             </li>
           </ul>
         </div>

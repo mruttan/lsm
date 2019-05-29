@@ -1,5 +1,5 @@
 import React from 'react';
-// import { withRouter } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 
 export class ContactMap extends React.Component {
 
@@ -18,7 +18,7 @@ export class ContactMap extends React.Component {
       lng: -79.451330
     }
     
-    var map = new window.google.maps.Map(document.getElementById('map'), {
+    var map = new google.maps.Map(document.getElementById('map'), {
       center: latlng,
       zoom: 15
     });
@@ -56,4 +56,4 @@ function loadScript(url) {
   index.parentNode.insertBefore(script, index);
 }
 
-export default ContactMap;
+export default withRouter(ContactMap);

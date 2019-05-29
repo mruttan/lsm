@@ -56,15 +56,13 @@
 .custom-navbar-logo {
   display: block !important;
   max-height: 4rem !important;
-  max-width: 75% !important;
-}
-.custom-nav-search {
-  // max-width: 575px !important;
-  min-width: 10rem !important;
-  padding: 0 !important;
+  max-width: 80% !important;
 }
 
 
+.lsmhockeylogo {
+  max-width: 100px !important;
+}
 
 #map {
   width: 100%;
@@ -84,6 +82,13 @@
 }
 
 .product-image {
+  max-width: 15rem;
+}
+
+.service-image {
   max-width: 300px;
 }
 
+.brand-image {
+  max-width: 10rem;
+}
