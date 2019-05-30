@@ -50,6 +50,23 @@ export class ProductList extends React.Component {
         })
     }
 
+    handleButtonClickHeadwear() {
+        this.setState({
+            subset_prods: this.props.allprods.filter(prod => prod.category == 'headwear')
+        })
+    }
+
+    handleButtonClickBags() {
+        this.setState({
+            subset_prods: this.props.allprods.filter(prod => prod.category == 'bags')
+        })
+    }
+
+    handleButtonClickDrinkware() {
+        this.setState({
+            subset_prods: this.props.allprods.filter(prod => prod.category == 'drinkware')
+        })
+    }
     render() {
         return (
             <div>
@@ -61,13 +78,13 @@ export class ProductList extends React.Component {
                         </button>
                     </div>
                     <div className="col-4">
-                        <button onClick={this.handleButtonClickApparel.bind(this)}
+                        <button onClick={this.handleButtonClickHeadwear.bind(this)}
                             className="btn btn-link">
                             Headwear
                         </button>
                     </div>
                     <div className="col-4">
-                        <button onClick={this.handleButtonClickApparel.bind(this)}
+                        <button onClick={this.handleButtonClickBags.bind(this)}
                             className="btn btn-link">
                             Bags
                         </button>
@@ -75,7 +92,7 @@ export class ProductList extends React.Component {
                 </div>
                 <div className="row text-center">
                     <div className="col-4">
-                        <button onClick={this.handleButtonClickApparel.bind(this)}
+                        <button onClick={this.handleButtonClickDrinkware.bind(this)}
                             className="btn btn-link">
                             Drinkware
                         </button>
