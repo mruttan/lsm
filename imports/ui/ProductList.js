@@ -44,9 +44,9 @@ export class ProductList extends React.Component {
         console.log(this.page);
     }
 
-    handleButtonClickJackets() {
+    handleButtonClickApparel() {
         this.setState({
-            subset_prods: this.props.allprods.filter(prod => prod.category == 'jacket')
+            subset_prods: this.props.allprods.filter(prod => prod.category == 'apparel')
         })
     }
 
@@ -55,19 +55,19 @@ export class ProductList extends React.Component {
             <div>
                 <div className="row text-center">
                     <div className="col-4">
-                        <button onClick={this.handleButtonClickJackets.bind(this)}
+                        <button onClick={this.handleButtonClickApparel.bind(this)}
                             className="btn btn-link">
                             Apparel
                         </button>
                     </div>
                     <div className="col-4">
-                        <button onClick={this.handleButtonClickJackets.bind(this)}
+                        <button onClick={this.handleButtonClickApparel.bind(this)}
                             className="btn btn-link">
                             Headwear
                         </button>
                     </div>
                     <div className="col-4">
-                        <button onClick={this.handleButtonClickJackets.bind(this)}
+                        <button onClick={this.handleButtonClickApparel.bind(this)}
                             className="btn btn-link">
                             Bags
                         </button>
@@ -75,7 +75,7 @@ export class ProductList extends React.Component {
                 </div>
                 <div className="row text-center">
                     <div className="col-4">
-                        <button onClick={this.handleButtonClickJackets.bind(this)}
+                        <button onClick={this.handleButtonClickApparel.bind(this)}
                             className="btn btn-link">
                             Drinkware
                         </button>
