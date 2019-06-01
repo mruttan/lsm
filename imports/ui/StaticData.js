@@ -1,8 +1,7 @@
 export const STATIC_DATA = [
-    { homepage: true, category: 'apparel', page: 1, title: 'ccm-apparel', link: '/images/productexamples/apparel/ccm_trackjacket.png' },
-    { page: 1, category: 'apparel', title: 'puma-apparel', link: '/images/productexamples/apparel/puma_sweater.png' },
-    { page: 1, category: 'apparel', title: 'nike-apparel', link: '/images/productexamples/apparel/nike_jacket.jpg' },
-    //remove "page" trait and both forward/backward buttons once finished.
+    { homepage: true, category: 'apparel', title: 'ccm-apparel', link: '/images/productexamples/apparel/ccm_trackjacket.png' },
+    { category: 'apparel', title: 'puma-apparel', link: '/images/productexamples/apparel/puma_sweater.png' },
+    { category: 'apparel', title: 'nike-apparel', link: '/images/productexamples/apparel/nike_jacket.jpg' },
     
     { category: 'headwear', title: 'ccm-hat', link: '/images/productexamples/headwear/ccm_hat.jpg' },
     { category: 'headwear', title: 'newera-hat', link: '/images/productexamples/headwear/newera_hat.jpg' },
@@ -16,21 +15,12 @@ export const STATIC_DATA = [
     { category: 'drinkware', title: 'nike-drinkware', link: '/images/productexamples/drinkware/nike_drinkware.jpg' },
     { category: 'drinkware', title: 'puma-drinkware', link: '/images/productexamples/drinkware/puma_drinkware.jpg' },
     
-    //last two are for categories i dont understand
-    // { category: 'office/technology', title: '-ot', link: '/images/productexamples/officetechnology/' },
-    // { category: 'office/technology', title: '-ot', link: '/images/productexamples/officetechnology/' },
-    // { category: 'office/technology', title: '-ot', link: '/images/productexamples/officetechnology/' },
+    { category: 'office/technology', title: 'debco-charger', link: '/images/productexamples/officetechnology/debco_carcharger.jpg' },
+    { category: 'office/technology', title: 'debco-keylight', link: '/images/productexamples/officetechnology/debco_keylight.jpg' },
+    { category: 'office/technology', title: 'debco-lantern', link: '/images/productexamples/officetechnology/debco_lantern.jpg' },
     
-    // { category: 'writing', title: '-writing', link: '/images/productexamples/writing/' },
-    // { category: 'writing', title: '-writing', link: '/images/productexamples/writing/' },
-    // { category: 'writing', title: '-writing', link: '/images/productexamples/writing/' },
+    { category: 'writing', title: 'debco-bluepen', link: '/images/productexamples/writing/debco_bluepen.jpg' },
+    { category: 'writing', title: 'debco-jportfolio', link: '/images/productexamples/writing/debco_juniorportfolio.jpg' },
+    { category: 'writing', title: 'debco-stickies', link: '/images/productexamples/writing/debco_stickies.jpg' },
     
-    { page: 2, title: 'pine tree', link: 'http://dummyimage.com/600x400' },
-    { page: 2, title: '1pine tree', link: 'http://dummyimage.com/600x400' },
-    { page: 2, title: '2pine tree', link: 'http://dummyimage.com/600x400' },
-    
-    { page: 3, title: 'Mug', link: 'http://dummyimage.com/600x400'},
-    { page: 3, title: '1Mug', link: 'http://dummyimage.com/600x400'},
-    { page: 3, title: '2Mug', link: 'http://dummyimage.com/600x400'},
-
 ];

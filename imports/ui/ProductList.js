@@ -1,8 +1,7 @@
 import React from 'react';
-import { withTracker } from 'meteor/react-meteor-data';
+import { withRouter } from 'react-router-dom';
 
 import ProductDetail from './ProductDetail';
-import { PList } from '../collections/PList';
 
 
 export class ProductList extends React.Component {
@@ -12,59 +11,39 @@ export class ProductList extends React.Component {
             subset_prods: []
         }
     }
-
     componentWillMount() {
-        this.page = 1;
         this.setState({
-            subset_prods: this.props.allprods.filter(prod => prod.page == this.page)
-        });
+            subset_prods: this.props.allprods.filter(prod => prod.category == 'apparel')
+        })
     }
-
-    //able to pass array straight up, now can i manip via state and array size? HELL YEA i can
-
-    handleButtonClickNext() {
-        if (this.page >= this.props.allprods.length / 3) {
-            this.page -= 1;
-        }
-        this.page += 1;
-        this.setState({
-            subset_prods: this.props.allprods.filter(prod => prod.page == this.page)
-        });
-        console.log(this.page);
-    }
-
-    handleButtonClickPrevious() {
-        if (this.page <= 1) {
-            this.page += 1;
-        }
-        this.page -= 1;
-        this.setState({
-            subset_prods: this.props.allprods.filter(prod => prod.page == this.page)
-        });
-        console.log(this.page);
-    }
-
     handleButtonClickApparel() {
         this.setState({
             subset_prods: this.props.allprods.filter(prod => prod.category == 'apparel')
         })
     }
-
     handleButtonClickHeadwear() {
         this.setState({
             subset_prods: this.props.allprods.filter(prod => prod.category == 'headwear')
         })
     }
-
     handleButtonClickBags() {
         this.setState({
             subset_prods: this.props.allprods.filter(prod => prod.category == 'bags')
         })
     }
-
     handleButtonClickDrinkware() {
         this.setState({
             subset_prods: this.props.allprods.filter(prod => prod.category == 'drinkware')
+        })
+    }
+    handleButtonClickOfficeTechnology() {
+        this.setState({
+            subset_prods: this.props.allprods.filter(prod => prod.category == 'office/technology')
+        })
+    }
+    handleButtonClickWriting() {
+        this.setState({
+            subset_prods: this.props.allprods.filter(prod => prod.category == 'writing')
         })
     }
     render() {
@@ -98,15 +77,15 @@ export class ProductList extends React.Component {
                         </button>
                     </div>
                     <div className="col-4">
-                        <button onClick={this.handleButtonClickPrevious.bind(this)}
+                        <button onClick={this.handleButtonClickOfficeTechnology.bind(this)}
                             className="btn btn-link">
-                            Office/Technology (also button previous for testing)
+                            Office/Technology
                         </button>
                     </div>
                     <div className="col-4">
-                        <button onClick={this.handleButtonClickNext.bind(this)}
+                        <button onClick={this.handleButtonClickWriting.bind(this)}
                             className="btn btn-link">
-                            Writing (also button next for testing)
+                            Writing
                         </button>
                     </div>
                 </div>
@@ -126,27 +105,4 @@ export class ProductList extends React.Component {
     }
 }
 
-export default withTracker(() => {
-    //Meteor.subscribe('plist')
-    //Meteor.subscribe('plist', PAGE_NUM);
-
-
-    return {
-        //plist: PList.find({}).fetch()
-    };
-    // return {plist: PList.find({
-    //     page: {
-    //         $eq: PAGE_NUM
-    //     }
-    // }).fetch() };
-})(ProductList);
-
-
-                //need to get pagination working with react/meteor
-                //either need to use session to add a selected class, or use meteor methods on
-                //the pagination buttons
-
-                //going to try using a session variable to display first 10-20 articles per page,
-                //adding a "page" value to each article.
-
-//try getting info in Products.js, and passing it down to ProductList via props.
+export default withRouter(ProductList);
