@@ -1,43 +1,47 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 
+//plan is to integrate ideas from current animated carousel into this, delete animatedcarousel,
+//and build this up to what I want. it is working as intended.
 class MyCarousel extends React.Component {
   render() {
     return (
-      <div id="myCarousel" className="carousel slide" data-ride="carousel">
-        <ul className="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ul>
+      <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
+        <ol className="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img src="/images/Golf-Course-TestLandscape2.jpg" alt="Los Angeles" width="1100" height="500"/>
-            <div className="carousel-caption">
-              <h3>Los Angeles</h3>
-              <p>We had such a great time in LA!</p>
+            <img className="d-block w-100" src="/images/Golf-Course-TestLandscape2.jpg" alt="First slide"/>
+            <div className="carousel-caption d-none d-md-block">
+              <h5 className="animated bounceInRight delay-1s">test slide 1</h5>
+              <p className="animated bounceInLeft delay-2s">test slide 1</p>
             </div>
           </div>
           <div className="carousel-item">
-            <img src="/images/jojo-TestLandscape3.jpg" alt="Chicago" width="1100" height="500"/>
-            <div className="carousel-caption">
-              <h3>Chicago</h3>
-              <p>Thank you, Chicago!</p>
+            <img className="d-block w-100" src="/images/Golf-Course-TestLandscape2.jpg" alt="Second slide"/>
+            <div className="carousel-caption d-none d-md-block">
+              <h5 className="animated slideInDown delay-1s">test slide 2</h5>
+              <p className="animated slideInRight delay-2s">test slide 2</p>
             </div>
           </div>
           <div className="carousel-item">
-            <img src="/images/Pond-Hockey-TestLandscape1.jpg" alt="New York" width="1100" height="500"/>
-            <div className="carousel-caption">
-              <h3>New York</h3>
-              <p>We love the Big Apple!</p>
+            <img className="d-block w-100" src="/images/Golf-Course-TestLandscape2.jpg" alt="Third slide"/>
+            <div className="carousel-caption d-none d-md-block">
+              <h5 className="animated zoomIn delay-1s">test slide 3</h5>
+              <p className="animated zoomIn delay-2s">test slide 3</p>
             </div>
           </div>
         </div>
-        <a className="carousel-control-prev" href="#myCarousel" data-slide="prev">
-          <span className="carousel-control-prev-icon"></span>
+        <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span className="sr-only">Previous</span>
         </a>
-        <a className="carousel-control-next" href="#myCarousel" data-slide="next">
-          <span className="carousel-control-next-icon"></span>
+        <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span className="sr-only">Next</span>
         </a>
       </div>
     );
