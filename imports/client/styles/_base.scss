@@ -3,35 +3,7 @@
   padding: 10px;
 }
 
-.fakeimg {
-  height: 200px;
-  background: #aaa;
-}
 
-.fakeimg2{
-  height: 200px;
-  background: green;
-}
-
-.fakeimg3 {
-  height: 200px;
-  background: blue;
-}
-
-.fakeimg4 {
-  height: 200px;
-  background: red;
-}
-
-.fakeimg5 {
-  height: 200px;
-  background: purple;
-}
-
-.fakeimg6 {
-  height: 200px;
-  background: orange;
-}
 .site-footer {
   margin-bottom: 0;
   margin-top: 4rem;
@@ -56,7 +28,6 @@
 .custom-navbar-logo {
   display: block !important;
   max-height: 4rem !important;
-  max-width: 80% !important;
 }
 
 
@@ -93,6 +64,14 @@
   max-width: 10rem;
 }
 
+//carousel css
+.coiny {
+  font-family: 'Coiny', cursive;
+}
+
+.c-img-height {
+  max-height: 475px;
+}
 
 .delay-1s {
   animation-delay: 1s;
@@ -100,4 +79,29 @@
 
 .delay-2s {
   animation-delay: 2s;
+}
+
+.delay-3s {
+  animation-delay: 3s;
+}
+
+.delay-4s {
+  animation-delay: 4s;
+}
+
+.c-1 {
+  max-width: 20%;
+}
+
+.c-1-1 {
+  right: 500px;
+  z-index: 2;
+}
+
+.c-1-2 {
+  z-index: 3;
+}
+
+.c-1-3 {
+  z-index: 1;
 }

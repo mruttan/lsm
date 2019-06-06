@@ -6,7 +6,7 @@ import { withRouter } from 'react-router-dom';
 class MyCarousel extends React.Component {
   render() {
     return (
-      <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
+      <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel" data-interval="10000">
         <ol className="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -14,24 +14,34 @@ class MyCarousel extends React.Component {
         </ol>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img className="d-block w-100" src="/images/Golf-Course-TestLandscape2.jpg" alt="First slide"/>
-            <div className="carousel-caption d-none d-md-block">
-              <h5 className="animated bounceInRight delay-1s">test slide 1</h5>
-              <p className="animated bounceInLeft delay-2s">test slide 1</p>
+            <img className="d-block w-100 c-img-height" src="/images/Golf-Course-TestLandscape2.jpg" alt="First slide"/>
+            <div className="carousel-caption d-block">
+              <img className="animated bounceInRight delay-1s c-1" src="/images/productexamples/carousel/golfbag.png"/>
+              <img className="animated bounceInRight delay-2s c-1" src="/images/productexamples/carousel/golftowel.png"/>
+              <img className="animated bounceInRight delay-3s c-1" src="/images/productexamples/carousel/emptygolfball.png"/>
+
+              <p className="animated bounceInLeft delay-4s coiny">Your Logo On Anything</p>
+
             </div>
           </div>
           <div className="carousel-item">
-            <img className="d-block w-100" src="/images/Golf-Course-TestLandscape2.jpg" alt="Second slide"/>
-            <div className="carousel-caption d-none d-md-block">
-              <h5 className="animated slideInDown delay-1s">test slide 2</h5>
-              <p className="animated slideInRight delay-2s">test slide 2</p>
+            <img className="d-block w-100 c-img-height" src="/images/productexamples/carousel/background/hockeyarena.jpg" alt="Second slide"/>
+            <div className="carousel-caption d-block">
+              <img className="animated bounceInRight delay-1s c-1" src="/images/productexamples/apparel/ccm_trackjacket.png"/>
+              <img className="animated bounceInUp delay-2s c-1" src="/images/productexamples/bags/bauer_bag.png"/>
+              <img className="animated bounceInLeft delay-3s c-1" src="/images/productexamples/carousel/puck.png"/>
+
+              <p className="animated bounceInDown delay-4s coiny">Teamwear</p>
             </div>
           </div>
           <div className="carousel-item">
-            <img className="d-block w-100" src="/images/Golf-Course-TestLandscape2.jpg" alt="Third slide"/>
-            <div className="carousel-caption d-none d-md-block">
-              <h5 className="animated zoomIn delay-1s">test slide 3</h5>
-              <p className="animated zoomIn delay-2s">test slide 3</p>
+            <img className="d-block w-100 c-img-height" src="/images/productexamples/carousel/background/tradeshow.jpg" alt="Third slide"/>
+            <div className="carousel-caption d-block">
+              <img className="animated zoomIn delay-1s c-1" src="/images/productexamples/carousel/waterbottle.png"/>
+              <img className="animated zoomIn delay-2s c-1" src="/images/productexamples/carousel/pens.png"/>
+              <img className="animated zoomIn delay-3s c-1" src="/images/productexamples/carousel/emptysweater.png"/>
+
+              <p className="animated zoomIn delay-4s coiny">Corperate Products</p>
             </div>
           </div>
         </div>

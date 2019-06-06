@@ -12,11 +12,12 @@ class SiteHeader extends React.Component {
   render(props) {
     return (
       <nav className="navbar navbar-expand-md bg-white navbar-light justify-content-center">
+        {/* for cleaning up nav, need to apply styles to the link tags instead of img tags I think */}
         <Link to="/">
           <img className="img-fluid custom-navbar-logo" src="/images/Lions-Share-Logo-GoldHead.jpg" alt="TitleLogo" />
         </Link>
         <Link to="/">
-          <img className="img-fluid custom-navbar-logo lsmhockeylogo pr-5" src="/images/logos/LionsShareHockeyLogo.jpg" alt="TitleLogo" />
+          <img className="img-fluid custom-navbar-logo lsmhockeylogo" src="/images/logos/LionsShareHockeyLogo.jpg" alt="TitleLogo" />
         </Link>
         <button className="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
           <span className="navbar-toggler-icon"></span>
