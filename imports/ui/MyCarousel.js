@@ -30,7 +30,6 @@ class MyCarousel extends React.Component {
               <img className="animated bounceInRight delay-1s c-1" src="/images/productexamples/apparel/ccm_trackjacket.png"/>
               <img className="animated bounceInUp delay-2s c-1" src="/images/productexamples/bags/bauer_bag.png"/>
               <img className="animated bounceInLeft delay-3s c-1" src="/images/productexamples/carousel/puck.png"/>
-
               <p className="animated bounceInDown delay-4s coiny">Teamwear</p>
             </div>
           </div>

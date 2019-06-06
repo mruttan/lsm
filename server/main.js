@@ -6,7 +6,6 @@ Meteor.startup(() => {
   // code to run on server at startup
 
   const numberRecords = PList.find({}).count();
-  console.log(numberRecords);
   if(!numberRecords) {
     for(var i = 0; i < PRODUCTS.length; i++) {
       PList.insert({

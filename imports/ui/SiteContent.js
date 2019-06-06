@@ -24,8 +24,9 @@ export class SiteContent extends React.Component {
         <div className="container">
           <div className="row">
             <div className="jumbotron text-center text-white title-jumbotron">
-              <img className="img-fluid image-jumbotron pb-2 col-sm-6" src="/images/Lions-Share-Logo-GoldHead.jpg" alt="TitleLogo" />
-              <img className="img-fluid image-jumbotron pb-2 col-sm-6 lsmhockeylogo" src="/images/logos/LionsShareHockeyLogo.jpg" alt="TitleLogo" />
+              <img className="img-fluid image-jumbotron col-sm-6 jumbo-pad" src="/images/Lions-Share-Logo-GoldHead.jpg" alt="TitleLogo" />
+              
+              <img className="img-fluid image-jumbotron col-sm-6 jumbo-lsmhockeylogo" src="/images/logos/LionsShareHockeyLogo.jpg" alt="TitleLogo" />
             </div>
           </div>
         </div>
@@ -74,7 +75,7 @@ export class SiteContent extends React.Component {
           <div className="row col">
             <h5>Products</h5>
           </div>
-          <div className="row col-12">
+          <div className="row col-12 justify-content-between">
             <HomePageProdList homepage_prods={this.state.homepage_prods} />
           </div>
           <div className="row col-3 float-right pt-4 pb-4">

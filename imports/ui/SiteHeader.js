@@ -16,9 +16,16 @@ class SiteHeader extends React.Component {
         <Link to="/">
           <img className="img-fluid custom-navbar-logo" src="/images/Lions-Share-Logo-GoldHead.jpg" alt="TitleLogo" />
         </Link>
-        <Link to="/">
+        <Link to="/" className="ml-lg-5">
           <img className="img-fluid custom-navbar-logo lsmhockeylogo" src="/images/logos/LionsShareHockeyLogo.jpg" alt="TitleLogo" />
         </Link>
+        <ul className="navbar-nav">
+          <li className="nav-item">
+            <Link to="/" className="nav-link">
+              Hockey Site
+            </Link>
+          </li>
+        </ul>
         <button className="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
           <span className="navbar-toggler-icon"></span>
         </button>
