@@ -1,3 +1,3 @@
-import { Mongo } from 'meteor/mongo';
+// import { Mongo } from 'meteor/mongo';
 
-export const PList = new Mongo.Collection('plist');
+// export const PList = new Mongo.Collection('plist');

@@ -1,20 +1,20 @@
 import { Meteor } from 'meteor/meteor';
-import { PList } from '../imports/collections/PList';
-import { PRODUCTS } from '../imports/ui/StaticData';
+//import { PList } from '../imports/collections/PList';
+//import { PRODUCTS } from '../imports/ui/StaticData';
 
 Meteor.startup(() => {
   // code to run on server at startup
 
-  const numberRecords = PList.find({}).count();
-  if(!numberRecords) {
-    for(var i = 0; i < PRODUCTS.length; i++) {
-      PList.insert({
-        page: PRODUCTS[i].page,
-        title: PRODUCTS[i].title,
-        link: PRODUCTS[i].link
-      });
-    }
-  }
+  // const numberRecords = PList.find({}).count();
+  // if(!numberRecords) {
+  //   for(var i = 0; i < PRODUCTS.length; i++) {
+  //     PList.insert({
+  //       page: PRODUCTS[i].page,
+  //       title: PRODUCTS[i].title,
+  //       link: PRODUCTS[i].link
+  //     });
+  //   }
+  // }
 
   // Meteor.publish('plist', function(page_num) {
   //   return PList.find({}, { limit: page_num });
@@ -26,9 +26,9 @@ Meteor.startup(() => {
   // });
   
   
-  Meteor.publish('plist', function() {
-    return PList.find({});
-  });
+  // Meteor.publish('plist', function() {
+  //   return PList.find({});
+  // });
 
   
   //a few things to try: multiple publishes?
