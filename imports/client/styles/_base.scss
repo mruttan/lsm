@@ -46,13 +46,6 @@
 }
 
 
-.brand-image {
-  max-width: 10rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .product-list {
   display: flex;
   flex-wrap: wrap;
@@ -73,6 +66,31 @@
 .service-image {
   max-width: 300px;
 }
+
+//brands css
+
+.brand-image {
+  max-width: 10rem;
+  // // display: block;
+  // margin-left: auto;
+  // margin-right: auto;
+  vertical-align: middle;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.brands-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.brands-item {
+  width: 25%;
+}
+
 //jumbotron
 .jumbo-pad {
   padding-right: 4rem!important;
