@@ -301,6 +301,16 @@ class Products extends React.Component {
                   <img className="brand-image" src="/images/brands/kewl.png" />
                 </a>            
               </li>
+              <li className="brands-item my-auto">
+                <a href="https://www.underarmour.com/en-ca?cid=PS%7cCA%7cBR%7cggl%7call%7cunderarmour+website%7call%7capp%7call%7cexact%7cdg%7cp38473539106&gclid=Cj0KCQjwxYLoBRCxARIsAEf16-uKlZXOJHYLC793SzmKAlJcfo0EbJdwI2Oa_aE8iM4Q2-CR5NNw9R0aAmZuEALw_wcB&gclsrc=aw.ds">
+                  <img className="brand-image" src="/images/brands/underarmour.png" />
+                </a>            
+              </li>
+              <li className="brands-item my-auto">
+                <a href="https://cutterbuck.com/">
+                  <img className="brand-image" src="/images/brands/cutter&buck.webp" />
+                </a>            
+              </li>
     {/*
               <li className="brands-item my-auto">
                 <a href="">
