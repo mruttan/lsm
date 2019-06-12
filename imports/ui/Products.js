@@ -51,50 +51,41 @@ class Products extends React.Component {
                 </a>            
               </li>
               <li className="brands-item my-auto">
-                <a href="https://www.roots.com/ca/en/homepage">
-                  <img className="brand-image" src="/images/brands/roots.png" />
+                <a href="http://www.trimarksportswear.com/cgi-bin/triweb/site.w?location=mcopy.w&mcopy=st_roots_footer&frames=no&target=main&sponsor=000100">
+                  <img className="brand-image" src="/images/brands/roots73.svg" />
                 </a>            
               </li>
               <li className="brands-item my-auto">
-                <a href="https://ca.puma.com/en_CA/home">
-                  <img className="brand-image" src="/images/brands/puma.png" />
+                <a href="http://www.trimarksportswear.com/cgi-bin/triweb/site.w?location=mcopy.w&mcopy=st_puma_footer&frames=no&target=main&sponsor=000100">
+                  <img className="brand-image" src="/images/brands/puma.svg" />
                 </a>             
               </li>
               <li className="brands-item my-auto">
-                <a href="https://www.nike.com/ca/">
+                <a href="https://www.technosport.com/catalog/Brands/Nike/">
                   <img className="brand-image" src="/images/brands/nike.png" />
                 </a>          
               </li>
               <li className="brands-item my-auto">
-                <a href="https://www.neweracap.com">
+                <a href="https://www.sanmarcanada.com/shop-catalogue/shop-by-brand/new-era-reg.html">
                   <img className="brand-image" src="/images/brands/newera.png" />
                 </a>            
               </li>
               <li className="brands-item my-auto">
-                <a href="https://www.americanapparel.com">
+                <a href="https://www.technosport.com/catalog/Brands/American-Apparel/">
                   <img className="brand-image" src="/images/brands/americanapparel.png" />
                 </a>             
               </li>
               <li className="brands-item my-auto">
-                <a href="https://www.newbalance.ca">
+                <a href="https://www.technosport.com/catalog/Brands/New-Balance/">
                   <img className="brand-image" src="/images/brands/newbalance.png" />
                 </a>            
               </li>
-
-    {/*
               <li className="brands-item my-auto">
-                <a href="">
-                  <img className="brand-image" src="/images/brands/" />
-                </a>            
-              </li>
-    */}
-              <li className="brands-item my-auto">
-                <a href="https://www.dryframe.com/">
+                <a href="https://www.sanmarcanada.com/shop-catalogue/shop-by-brand/dryframe-174.html">
                   <img className="brand-image" src="/images/brands/dryframe.png" />
                 </a>            
               </li>
               <li className="brands-item my-auto">
-                {/* link to be fixed */}
                 <a href="https://www.sanmarcanada.com/shop-catalogue/shop-by-brand/coal-harbour-reg.html">
                   <img className="brand-image" src="/images/brands/ch.png" />
                 </a>            
@@ -105,19 +96,16 @@ class Products extends React.Component {
                 </a>            
               </li>
               <li className="brands-item my-auto">
-                {/* link to be fixed? */}
                 <a href="https://www.sanmarcanada.com/shop-catalogue/shop-by-brand/es-active-reg.html">
                   <img className="brand-image" src="/images/brands/esactive.png" />
                 </a>            
               </li>
               <li className="brands-item my-auto">
-                {/* to be fixed? */}
                 <a href="https://www.sanmarcanada.com/shop-catalogue/shop-by-brand/everyday-reg-collection.html">
                   <img className="brand-image" src="/images/brands/everyday.png" />
                 </a>            
               </li>
               <li className="brands-item my-auto">
-                {/* to be fixed? */}
                 <a href="https://www.sanmarcanada.com/shop-catalogue/shop-by-brand/eurospun.html">
                   <img className="brand-image" src="/images/brands/eurospun.png" />
                 </a>            
@@ -178,16 +166,148 @@ class Products extends React.Component {
                 </a>            
               </li>
               <li className="brands-item my-auto">
-                <a href="">
-                  <img className="brand-image" src="/images/brands/" />
+                <a href="https://www.alphabroder.ca/cgi-bin/online/webshr/search-result.w?ref=Mill_Name:All%20Sport">
+                  <img className="brand-image" src="/images/brands/allsport.webp" />
                 </a>            
               </li>
+              <li className="brands-item my-auto">
+                <a href="https://www.alphabroder.ca/cgi-bin/online/webshr/search-result.w?ref=Mill_Name:Alstyle">
+                  <img className="brand-image" src="/images/brands/alstyle.webp" />
+                </a>            
+              </li>
+              <li className="brands-item my-auto">
+                <a href="https://www.alphabroder.ca/cgi-bin/online/webshr/search-result.w?ref=Mill_Name:Alternative">
+                  <img className="brand-image" src="/images/brands/alternative.jpg" />
+                </a>            
+              </li>
+              <li className="brands-item my-auto">
+                <a href="https://www.alphabroder.ca/cgi-bin/online/webshr/search-result.w?ref=Mill_Name:Ash%20City">
+                  <img className="brand-image" src="/images/brands/ashcity.webp" />
+                </a>            
+              </li>
+              <li className="brands-item my-auto">
+                <a href="https://www.alphabroder.ca/cgi-bin/online/webshr/search-result.w?ref=Mill_Name:Ash%20City%20-%20Il%20Migliore">
+                  <img className="brand-image" src="/images/brands/ashcityim.webp" />
+                </a>            
+              </li>
+              <li className="brands-item my-auto">
+                <a href="https://www.alphabroder.ca/cgi-bin/online/webshr/search-result.w?ref=Mill_Name:Bella%20%2B%20Canvas">
+                  <img className="brand-image" src="/images/brands/bellacanvas.webp" />
+                </a>            
+              </li>
+              <li className="brands-item my-auto">
+                <a href="https://www.technosport.com/catalog/Brands/Champion/">
+                  <img className="brand-image" src="/images/brands/champion.jpg" />
+                </a>            
+              </li>
+              <li className="brands-item my-auto">
+                <a href="https://www.alphabroder.ca/cgi-bin/online/webshr/search-result.w?ref=Mill_Name:Code%20Five">
+                  <img className="brand-image" src="/images/brands/codefive.webp" />
+                </a>            
+              </li>
+              <li className="brands-item my-auto">
+                <a href="https://www.alphabroder.ca/cgi-bin/online/webshr/search-result.w?ref=Mill_Name:Columbia">
+                  <img className="brand-image" src="/images/brands/columbia.webp" />
+                </a>            
+              </li>
+              <li className="brands-item my-auto">
+                <a href="https://www.alphabroder.ca/cgi-bin/online/webshr/search-result.w?ref=Mill_Name:Dickies">
+                  <img className="brand-image" src="/images/brands/dickies.webp" />
+                </a>            
+              </li>
+              <li className="brands-item my-auto">
+                <a href="https://www.alphabroder.ca/cgi-bin/online/webshr/search-result.w?ref=Mill_Name:Dickies%20Drop%20Ship">
+                  <img className="brand-image" src="/images/brands/dropship.webp" />
+                </a>            
+              </li>
+              <li className="brands-item my-auto">
+                <a href="https://www.alphabroder.ca/cgi-bin/online/webshr/search-result.w?ref=Mill_Name:Dri%20Duck">
+                  <img className="brand-image" src="/images/brands/driduck.webp" />
+                </a>            
+              </li>
+              <li className="brands-item my-auto">
+                <a href="https://www.alphabroder.ca/cgi-bin/online/webshr/search-result.w?ref=Mill_Name:Flexfit">
+                  <img className="brand-image" src="/images/brands/flexfit.webp" />
+                </a>            
+              </li>
+              <li className="brands-item my-auto">
+                <a href="https://www.alphabroder.ca/cgi-bin/online/webshr/search-result.w?ref=Mill_Name:Gemline">
+                  <img className="brand-image" src="/images/brands/gemline.webp" />
+                </a>            
+              </li>
+              <li className="brands-item my-auto">
+                <a href="https://www.alphabroder.ca/cgi-bin/online/webshr/search-result.w?ref=Mill_Name:Jerzees">
+                  <img className="brand-image" src="/images/brands/jerzees.webp" />
+                </a>            
+              </li>
+              <li className="brands-item my-auto">
+                <a href="https://www.alphabroder.ca/cgi-bin/online/webshr/search-result.w?ref=Mill_Name:Marmot">
+                  <img className="brand-image" src="/images/brands/marmot.webp" />
+                </a>            
+              </li>
+              <li className="brands-item my-auto">
+                <a href="https://www.alphabroder.ca/cgi-bin/online/webshr/search-result.w?ref=Mill_Name:Next%20Level">
+                  <img className="brand-image" src="/images/brands/nextlevel.webp" />
+                </a>            
+              </li>
+              <li className="brands-item my-auto">
+                <a href="https://www.alphabroder.ca/cgi-bin/online/webshr/search-result.w?ref=Mill_Name:Rabbit%20Skins">
+                  <img className="brand-image" src="/images/brands/rabbitskins.webp" />
+                </a>            
+              </li>
+              <li className="brands-item my-auto">
+                <a href="https://www.alphabroder.ca/cgi-bin/online/webshr/search-result.w?ref=Mill_Name:Spyder">
+                  <img className="brand-image" src="/images/brands/spyder.jpg" />
+                </a>            
+              </li>
+              <li className="brands-item my-auto">
+                <a href="https://www.alphabroder.ca/cgi-bin/online/webshr/search-result.w?ref=Mill_Name:Threadfast">
+                  <img className="brand-image" src="/images/brands/threadfast.webp" />
+                </a>            
+              </li>
+              <li className="brands-item my-auto">
+                <a href="https://www.alphabroder.ca/cgi-bin/online/webshr/search-result.w?ref=Mill_Name:Tie-Dye">
+                  <img className="brand-image" src="/images/brands/tiedye.webp" />
+                </a>            
+              </li>
+              <li className="brands-item my-auto">
+                <a href="http://www.trimarksportswear.com/cgi-bin/triweb/site.w?location=mcopy.w&mcopy=st_elevate_footer&frames=no&target=main&sponsor=000100">
+                  <img className="brand-image" src="/images/brands/elevate.svg" />
+                </a>            
+              </li>
+              <li className="brands-item my-auto">
+                <a href="http://www.trimarksportswear.com/cgi-bin/triweb/site.w?location=mcopy.w&mcopy=st_HighSierra_footer&frames=no&target=main&sponsor=000100">
+                  <img className="brand-image" src="/images/brands/highsierra.svg" />
+                </a>            
+              </li>
+              <li className="brands-item my-auto">
+                <a href="https://www.technosport.com/catalog/Brands/Lacoste/">
+                  <img className="brand-image" src="/images/brands/lacoste.png" />
+                </a>            
+              </li>
+              <li className="brands-item my-auto">
+                <a href="https://www.technosport.com/catalog/Brands/Oakley/">
+                  <img className="brand-image" src="/images/brands/oakley.png" />
+                </a>            
+              </li>
+              <li className="brands-item my-auto">
+                <a href="https://ca.levelwear.com/">
+                  <img className="brand-image" src="/images/brands/levelwear.png" />
+                </a>            
+              </li>
+              <li className="brands-item my-auto">
+                {/* check correct link? */ }
+                <a href="https://ca.levelwearteam.com/">
+                  <img className="brand-image" src="/images/brands/kewl.png" />
+                </a>            
+              </li>
+    {/*
               <li className="brands-item my-auto">
                 <a href="">
                   <img className="brand-image" src="/images/brands/" />
                 </a>            
               </li>
-
+    */}
             </ul>
           </div>
 
@@ -211,7 +331,7 @@ export default withRouter(Products);
 /*
 Categories:
 
- 
+
 Apparel
 
 Headwear
