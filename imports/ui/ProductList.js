@@ -38,7 +38,7 @@ export class ProductList extends React.Component {
     }
     handleButtonClickOfficeTechnology() {
         this.setState({
-            subset_prods: this.props.allprods.filter(prod => prod.category == 'office/technology')
+            subset_prods: this.props.allprods.filter(prod => prod.category == 'technology')
         })
     }
     handleButtonClickWriting() {
@@ -79,7 +79,7 @@ export class ProductList extends React.Component {
                     <div className="col-4">
                         <button onClick={this.handleButtonClickOfficeTechnology.bind(this)}
                             className="btn btn-link">
-                            Office/Technology
+                            Technology
                         </button>
                     </div>
                     <div className="col-4">
@@ -91,7 +91,7 @@ export class ProductList extends React.Component {
                 </div>
                 <div className="row">
                     <div className="col-12">
-                        <div className="row pt-4 pb-4 d-flex justify-content-center">
+                        <div className="pt-4 pb-4 d-flex justify-content-center">
                             <div className="product-list">
                                 {this.state.subset_prods.map(product =>
                                     <ProductDetail key={product.title} product={product} />

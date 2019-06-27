@@ -1,7 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 
-import AnimatedCarousel from './AnimatedCarousel';
 import MyCarousel from './MyCarousel';
 import SiteContent from './SiteContent';
 import SiteFooter from './SiteFooter';
@@ -16,7 +15,6 @@ export class HomePage extends React.Component {
     return (
       <div>
         <SiteHeader title="LSM" />
-        {/* <AnimatedCarousel/> */}
         <MyCarousel/>
         <SiteContent/>
         <SiteFooter/>

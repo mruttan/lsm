@@ -16,7 +16,7 @@ export class Contact extends React.Component {
       <div>
         <SiteHeader title="LSM" />
         <div className="container content-container">
-          <div className="row pb-5">
+          <div className="row pt-4">
             <div className="col-sm-3">
               <h3>Contact</h3>
               <ul className="nav nav-pills flex-column">

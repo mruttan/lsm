@@ -1,4 +1,6 @@
-
+body {
+  padding-top: 4.5rem;
+}
 .space {
   padding: 10px;
 }
@@ -31,8 +33,9 @@
 
 .custom-navbar-logo {
   display: block !important;
-  max-height: 4rem !important;
+  max-height: 4.5rem !important;
 }
+
 
 
 #map {
@@ -66,6 +69,12 @@
 .service-image {
   max-width: 300px;
 }
+
+.fakeimg {
+  height: 200px;
+  background: #aaa;
+}
+
 
 //brands css
 

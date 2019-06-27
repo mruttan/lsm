@@ -11,21 +11,12 @@ class SiteHeader extends React.Component {
 
   render(props) {
     return (
-      <nav className="navbar navbar-expand-md bg-white navbar-light justify-content-center">
+      <nav className="navbar fixed-top navbar-expand-md bg-white navbar-light justify-content-around custom-navbar-height">
         {/* for cleaning up nav, need to apply styles to the link tags instead of img tags I think */}
         <Link to="/">
           <img className="img-fluid custom-navbar-logo" src="/images/Lions-Share-Logo-GoldHead.jpg" alt="TitleLogo" />
         </Link>
-        <Link to="/" className="ml-lg-5">
-          <img className="img-fluid custom-navbar-logo lsmhockeylogo" src="/images/logos/LionsShareHockeyLogo.jpg" alt="TitleLogo" />
-        </Link>
-        <ul className="navbar-nav">
-          <li className="nav-item">
-            <Link to="/" className="nav-link">
-              Hockey Site
-            </Link>
-          </li>
-        </ul>
+        
         <button className="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -35,9 +26,6 @@ class SiteHeader extends React.Component {
               <Link to="/about" className="nav-link">About Us</Link>
             </li>
             <li className="nav-item">
-              <Link to="/services" className="nav-link">Services</Link>
-            </li>
-            <li className="nav-item">
               <Link to="/products" className="nav-link">Products</Link>
             </li>
             <li className="nav-item">
@@ -45,6 +33,9 @@ class SiteHeader extends React.Component {
             </li>
           </ul>
         </div>
+        <Link to="/" className="ml-lg-5">
+          <img className="img-fluid custom-navbar-logo lsmhockeylogo" src="/images/logos/LionsShareHockeyLogo.jpg" alt="TitleLogo" />
+        </Link>
       </nav>
     );
   }

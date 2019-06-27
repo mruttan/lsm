@@ -21,7 +21,7 @@ export class SiteContent extends React.Component {
   render() {
     return (
       <div>
-        <div className="container">
+        {/* <div className="container">
           <div className="row">
             <div className="jumbotron text-center text-white title-jumbotron">
               <img className="img-fluid image-jumbotron col-sm-6 jumbo-pad" src="/images/Lions-Share-Logo-GoldHead.jpg" alt="TitleLogo" />
@@ -29,8 +29,8 @@ export class SiteContent extends React.Component {
               <img className="img-fluid image-jumbotron col-sm-6 jumbo-lsmhockeylogo" src="/images/logos/LionsShareHockeyLogo.jpg" alt="TitleLogo" />
             </div>
           </div>
-        </div>
-        <div className="container">
+        </div> */}
+        <div className="container pt-5">
           <div className="row">
             <div className="col mx-auto">
               <p>
@@ -59,17 +59,20 @@ export class SiteContent extends React.Component {
           </div>
           <div className="row col-12">
             <div className="col-sm-4">
-              <img className="service-image" src="/images/services/heatpress.png" />
+              <div className="fakeimg">
+                <h1>hello world</h1>
+              </div>
             </div>
             <div className="col-sm-4">
-              <img className="service-image" src="/images/services/embroidery.jpg" />
+              <div className="fakeimg">
+                <h1>hello world</h1>
+              </div>
             </div>
             <div className="col-sm-4">
-              <img className="service-image" src="/images/services/customapparrel.jpg" />
+              <div className="fakeimg">
+                <h1>hello world</h1>
+              </div>
             </div>
-          </div>
-          <div className="row col-3 float-right pt-4 pb-4">
-            <Link to="/services" className="page-link">See More Services...</Link>
           </div>
           
           <div className="row col">
