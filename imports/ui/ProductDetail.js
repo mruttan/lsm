@@ -2,7 +2,7 @@ import React from 'react';
 import { withRouter } from 'react-router-dom';
 
 export const ProductDetail = ({ product }) => {
-    const { title, img, brand } = product;
+    const { img, brand } = product;
   
     return(
         <div className="my-auto pt-3">
