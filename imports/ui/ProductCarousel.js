@@ -16,14 +16,16 @@ export class ProductCarousel extends React.Component {
                                 <button data-target="#productCarousel" data-slide-to="4" className="btn btn-outline-warning custom-button-width">Technology</button>
                                 <button data-target="#productCarousel" data-slide-to="5" className="btn btn-outline-info custom-button-width">Writing</button>
                             </div>
-                            <div className="btn-group btn-group-sm d-block d-md-none">
-                                <button data-target="#productCarousel" data-slide-to="0" className="btn btn-outline-primary custom-button-width">Apparel</button>
-                                <button data-target="#productCarousel" data-slide-to="1" className="btn btn-outline-secondary custom-button-width">Headwear</button>
-                                <button data-target="#productCarousel" data-slide-to="2" className="btn btn-outline-success custom-button-width">Bags</button>
-                                <button data-target="#productCarousel" data-slide-to="3" className="btn btn-outline-danger custom-button-width">Drinkware</button>
-                                <button data-target="#productCarousel" data-slide-to="4" className="btn btn-outline-warning custom-button-width">Technology</button>
-                                <button data-target="#productCarousel" data-slide-to="5" className="btn btn-outline-info custom-button-width">Writing</button>
+                            <div className="d-block d-md-none ">
+                                <button data-target="#productCarousel" data-slide-to="0" className="col-4 btn-sm btn-outline-primary custom-button-width">Apparel</button>
+                                <button data-target="#productCarousel" data-slide-to="1" className="col-4 btn-sm btn-outline-secondary custom-button-width">Headwear</button>
+                                <button data-target="#productCarousel" data-slide-to="2" className="col-4 btn-sm btn-outline-success custom-button-width">Bags</button>
+                                <button data-target="#productCarousel" data-slide-to="3" className="col-4 btn-sm btn-outline-danger custom-button-width">Drinkware</button>
+                                <button data-target="#productCarousel" data-slide-to="4" className="col-4 btn-sm btn-outline-warning custom-button-width">Technology</button>
+                                <button data-target="#productCarousel" data-slide-to="5" className="col-4 btn-sm btn-outline-info custom-button-width">Writing</button>
                             </div>
+
+                            
                         </div>
                     </section>
                 </div> {/* row */}

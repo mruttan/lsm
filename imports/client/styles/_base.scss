@@ -1,6 +1,9 @@
 //this is set to the same height as the navbar
 body {
-  padding-top: 88px;
+  padding-top: 98px;
+  @media (max-width: 768px) {
+    padding-top: 90px;
+  }
 }
 //example of media query if needed to use
 // @media (min-width: 600px) {
@@ -36,18 +39,29 @@ body {
 
 .custom-nav {
   // flex-grow: .10 !important;
-  background-color: #0051ff !important;
+  // background-color: #0051ff !important;
 }
-
-.custom-navbar-logo {
-  // display: block !important;  
-  max-width: 15rem;
-  max-height: 4.5rem;
-  @media (max-width: 576px) {
-    max-width: 13rem !important;
+.custom-nav-justify {
+  justify-content: space-between;
+  @media (max-width: 768px) {
+    justify-content: end;
   }
 }
 
+.custom-navbar-logo {
+  max-width: 15rem;
+  max-height: 4.5rem;
+  @media (max-width: 576px) {
+    max-width: 10rem;
+  }
+}
+
+.lsmhockeylogo {
+  max-height: 4.5rem;
+  @media (max-width: 576px) {
+    max-height: 4rem;
+  }
+}
 
 
 #map {
@@ -92,29 +106,21 @@ body {
 
 .brand-image {
   max-width: 6rem;
-  vertical-align: middle;
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+
 }
 
 .brands-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
   list-style: none;
-}
-
-.brands-item {
-  width: 11.1%;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 //jumbotron
 .jumbo-pad {
   padding-right: 4rem!important;
-}
-.lsmhockeylogo {
-  max-width: 100px !important;
 }
 
 .jumbo-lsmhockeylogo {

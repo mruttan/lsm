@@ -11,34 +11,45 @@ class SiteHeader extends React.Component {
 
   render(props) {
     return (
-      <nav className="navbar fixed-top navbar-expand-md navbar-light justify-content-around custom-nav">
-        {/* for cleaning up nav, need to apply styles to the link tags instead of img tags I think */}
-        <Link to="/">
-          <img className="img-fluid custom-navbar-logo" src="/images/Lions-Share-Logo-GoldHead.png" alt="TitleLogo" />
-        </Link>
-        
-        <button className="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse ml-lg-5" id="collapsibleNavbar">
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <Link to="/about" className="nav-link">About Us</Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/products" className="nav-link">Products</Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/contact" className="nav-link">Contact</Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/" className="ml-lg-5">
-                <img className="img-fluid custom-navbar-logo lsmhockeylogo" src="/images/logos/LionsShareHockeyLogo.png" alt="TitleLogo" />
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <nav className="navbar navbar-dark bg-dark fixed-top navbar-expand-md custom-nav-justify">
+        <div className="container">
+
+          {/* for cleaning up nav, need to apply styles to the link tags instead of img tags I think */}
+          <Link className="navbar-brand" to="/">
+            <img className="custom-navbar-logo" src="/images/Lions-Share-Logo-GoldHead.png" alt="TitleLogo" />
+          </Link>
+          
+          <Link className="navbar-brand ml-auto d-block d-md-none" to="/">
+            <img className="lsmhockeylogo" src="/images/logos/LionsShareHockeyLogo.png" alt="TitleLogo" />
+          </Link>
+
+          <button className="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#toggleNav"
+            aria-controls="toggleNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+
+          <div className="collapse navbar-collapse flex-grow-0" id="toggleNav">
+            <ul className="navbar-nav">
+              <li className="nav-item active">
+                <Link to="/about" className="nav-link">About Us</Link>
+              </li>
+              <li className="nav-item active">
+                <Link to="/products" className="nav-link">Products</Link>
+              </li>
+              <li className="nav-item active">
+                <Link to="/contact" className="nav-link">Contact</Link>
+              </li>
+            </ul>
+          </div> {/* collapse */}
+
+          <Link className="navbar-brand d-none d-md-block" to="/">
+            <img className="custom-navbar-logo lsmhockeylogo" src="/images/logos/LionsShareHockeyLogo.png" alt="TitleLogo" />
+          </Link>
+
+
+
+        </div> {/* container */}
+      </nav> //nav
     );
   }
 }
