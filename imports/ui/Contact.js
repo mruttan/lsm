@@ -10,6 +10,10 @@ export class Contact extends React.Component {
   constructor(props) {
     super(props);
   }
+
+  componentDidMount() {
+    window.scrollTo(0,0);
+  }
 //currently converting all of existing classes to use Bootstrap 4 classes, MY css!
   render(props) {
     return (

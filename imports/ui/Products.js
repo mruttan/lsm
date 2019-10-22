@@ -17,6 +17,10 @@ class Products extends React.Component {
                    brands: [] }
   }
 
+  componentDidMount() {
+    window.scrollTo(0,0);
+  }
+
   componentWillMount() {
     this.setState({
       prods: STATIC_DATA,
