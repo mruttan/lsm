@@ -39,7 +39,7 @@ export class SiteContent extends React.Component {
           <section className="col-12">
 
             <div className="col mx-auto">
-              <h1>heroku test - staging pipeline test</h1>
+              <h1>heroku test - merge attempt / footer & link work</h1>
               <p>
                   At Lion’s Share our goal is to help you increase your brand's visibility, while generating the highest return on your investment.  
                   Our friendly experienced team has access to thousands of quality promotional products.  We will take the time to define your 
