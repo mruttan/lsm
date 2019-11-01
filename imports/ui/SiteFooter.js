@@ -40,9 +40,9 @@ class SiteFooter extends React.Component {
 
       // </div>
 
-      <div class="mt-1 pt-5 pb-3 footer">
-        <div class="container">
-          <div class="row">
+      <div className="mt-1 pt-5 pb-3 footer">
+        <div className="container">
+          <div className="row">
             <div className="col my-auto">
               <Link to="/" className="footer-link">
                 <h4>Home</h4>
@@ -63,9 +63,9 @@ class SiteFooter extends React.Component {
                 <h4>Contact</h4>
               </Link>
             </div>
-            {/* <div class="col-7 links">
-              <h4 class="mt-lg-0 mt-sm-3">Links</h4>
-              <ul class="m-0 p-0">
+            {/* <div className="col-7 links">
+              <h4 className="mt-lg-0 mt-sm-3">Links</h4>
+              <ul className="m-0 p-0">
                 <li>- <a href="#">Lorem ipsum</a></li>
                 <li>- <a href="#">Nam mauris velit</a></li>
                 <li>- <a href="#">Etiam vitae mauris</a></li>
@@ -74,16 +74,16 @@ class SiteFooter extends React.Component {
                 <li>- <a href="#">Mauris efficitur nulla</a></li>
               </ul>
             </div> */}
-            <div class="col location text-center">
-              <h4 class="mt-4">Location</h4>
+            <div className="col location text-center">
+              <h4 className="mt-4">Location</h4>
               <p>16610, Bayview Ave, Newmarket</p>
-              <p class="mb-0"><i class="fa fa-phone mr-3"></i>(905) 555-5555</p>
-              <p><i class="fa fa-envelope-o mr-3"></i>email@example.com</p>
+              <p className="mb-0"><i className="fa fa-phone mr-3"></i>(905) 555-5555</p>
+              <p><i className="fa fa-envelope-o mr-3"></i>email@example.com</p>
             </div>
           </div>
-          <div class="row mt-5">
-            <div class="col-5 copyright">
-              <p class=""><small class="text-white-50">© 2019. All Rights Reserved.</small></p>
+          <div className="row mt-5">
+            <div className="col-5 copyright">
+              <p className=""><small className="text-white-50">© 2019. All Rights Reserved.</small></p>
             </div>
           </div>
         </div>
