@@ -10,8 +10,8 @@ class MyCarousel extends React.Component {
   render() {
     return (
       <div>
-        <div className="row">
-          <section className="col-12">
+        <div>
+          <section>
 
         
 
