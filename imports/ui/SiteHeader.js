@@ -19,7 +19,7 @@ class SiteHeader extends React.Component {
             <img className="custom-navbar-logo" src="/images/Lions-Share-Logo-GoldHead.png" alt="TitleLogo" />
           </Link>
           
-          <Link className="navbar-brand ml-auto d-block d-md-none custom-nav-mr" to="/">
+          <Link className="navbar-brand ml-auto d-block d-md-none custom-nav-mr" to="/lshockey">
             <img className="lsmhockeylogo" src="/images/logos/LionsShareHockeyLogo.png" alt="TitleLogo" />
           </Link>
 
@@ -42,7 +42,7 @@ class SiteHeader extends React.Component {
             </ul>
           </div> {/* collapse */}
 
-          <Link className="navbar-brand d-none d-md-block" to="/">
+          <Link className="navbar-brand d-none d-md-block" to="/lshockey">
             <img className="custom-navbar-logo lsmhockeylogo" src="/images/logos/LionsShareHockeyLogo.png" alt="TitleLogo" />
           </Link>
 
