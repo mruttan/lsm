@@ -7,6 +7,7 @@ import AboutUs from '../ui/AboutUs';
 import Contact from '../ui/Contact';
 import HomePage from '../ui/HomePage';
 import Products from '../ui/Products';
+import LSHockey from '../ui/LSHockey';
 
 export const history = createHistory();
 
@@ -29,6 +30,7 @@ export const AppRouter = () => (
         <Route path="/about" component={AboutUs} />
         <Route path="/contact" component={Contact} />
         <Route path="/products" component={Products} />
+        <Route path="/lshockey" component={LSHockey} />
       </Switch>
       <ChangeTracker />
     </div>

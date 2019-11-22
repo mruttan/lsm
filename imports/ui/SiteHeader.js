@@ -11,7 +11,7 @@ class SiteHeader extends React.Component {
 
   render(props) {
     return (
-      <nav className="navbar navbar-dark bg-dark fixed-top navbar-expand-md custom-nav-justify">
+      <nav className="navbar navbar-dark fixed-top navbar-expand-md custom-nav">
         <div className="container">
 
           {/* for cleaning up nav, need to apply styles to the link tags instead of img tags I think */}
@@ -19,11 +19,11 @@ class SiteHeader extends React.Component {
             <img className="custom-navbar-logo" src="/images/Lions-Share-Logo-GoldHead.png" alt="TitleLogo" />
           </Link>
           
-          <Link className="navbar-brand ml-auto d-block d-md-none" to="/">
+          <Link className="navbar-brand ml-auto d-block d-md-none custom-nav-mr" to="/lshockey">
             <img className="lsmhockeylogo" src="/images/logos/LionsShareHockeyLogo.png" alt="TitleLogo" />
           </Link>
 
-          <button className="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#toggleNav"
+          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleNav"
             aria-controls="toggleNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -42,7 +42,7 @@ class SiteHeader extends React.Component {
             </ul>
           </div> {/* collapse */}
 
-          <Link className="navbar-brand d-none d-md-block" to="/">
+          <Link className="navbar-brand d-none d-md-block" to="/lshockey">
             <img className="custom-navbar-logo lsmhockeylogo" src="/images/logos/LionsShareHockeyLogo.png" alt="TitleLogo" />
           </Link>
 

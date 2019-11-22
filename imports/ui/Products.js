@@ -33,13 +33,14 @@ class Products extends React.Component {
       <div>
         <SiteHeader title="LSM" />
         <div className="container">
-          <div className="row pt-4">
-            <h1>Products</h1>
+          <div className="row mt-3">
+            <h4 className="display-4 mx-auto text-center">Products</h4>
           </div>
           {/* <ProductList allprods={this.state.prods} /> */}
           <ProductCarousel/>
-          <div className="row pt-4">
-            <h1>Brand Partners</h1>
+          <hr className="my-4"/>
+          <div className="row mt-3">
+            <h4 className="display-4 mx-auto text-center">Brand Partners</h4>
           </div>
           <BrandList allbrands={this.state.brands} />
         </div>

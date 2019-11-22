@@ -38,31 +38,41 @@ body {
 }
 
 .custom-nav {
-  // flex-grow: .10 !important;
-  // background-color: #0051ff !important;
-}
-.custom-nav-justify {
+  background: #152F4F;
+  color:white;
   justify-content: space-between;
   @media (max-width: 768px) {
     justify-content: end;
   }
 }
 
+
 .custom-navbar-logo {
   max-width: 15rem;
   max-height: 4.5rem;
   @media (max-width: 576px) {
-    max-width: 10rem;
+    max-width: 8.5rem;
   }
 }
 
 .lsmhockeylogo {
   max-height: 4.5rem;
   @media (max-width: 576px) {
-    max-height: 4rem;
+    max-height: 3.5rem;
   }
 }
 
+// .custom-nav-mr {
+//   @media (max-width: 576px) {
+//     margin-right: 0.5rem !important;
+//   }
+// }
+
+.navbar {
+  min-height: 90px;
+  display: block;
+  position: fixed;
+}
 
 #map {
   width: 100%;
@@ -185,3 +195,5 @@ body {
 //button css
 
 //put up on heroku site to let mom look/think/review it
+
+
