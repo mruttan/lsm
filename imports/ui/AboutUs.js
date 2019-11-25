@@ -283,7 +283,7 @@ class AboutUs extends React.Component {
                         From Around the World
                       </span>
                       <span className="section-heading-lower">
-                        Bulk Speciality Blends
+                        Bulk 
                       </span>
                     </h2>
                   </div>

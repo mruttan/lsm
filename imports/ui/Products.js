@@ -32,17 +32,33 @@ class Products extends React.Component {
     return (
       <div>
         <SiteHeader title="LSM" />
-        <div className="container">
-          <div className="row mt-3">
-            <h4 className="display-4 mx-auto text-center">Products</h4>
+        <div className="container page-section">
+          <div className="row">
+            <section className="col-12">
+              <div className="justify-content-center">
+                <div className="jumbotron mx-auto bg-white">
+
+                  <div className="row">
+                    <h4 className="display-4 mx-auto text-center mt-5">Products</h4>
+                  </div>
+                  {/* <ProductList allprods={this.state.prods} /> */}
+                  <div className="mt-5 mb-5">
+                    <ProductCarousel/>
+                  </div>
+                <hr className="my-4"/>
+                  <div className="row mt-5">
+                    <h4 className="display-4 mx-auto text-center">Brand Partners</h4>
+                  </div>
+                  <div className="mt-5">
+                    <BrandList allbrands={this.state.brands} />
+                  </div>
+
+
+                </div>
+              </div>
+            </section>
           </div>
-          {/* <ProductList allprods={this.state.prods} /> */}
-          <ProductCarousel/>
-          <hr className="my-4"/>
-          <div className="row mt-3">
-            <h4 className="display-4 mx-auto text-center">Brand Partners</h4>
-          </div>
-          <BrandList allbrands={this.state.brands} />
+
         </div>
         <SiteFooter/>
       </div>

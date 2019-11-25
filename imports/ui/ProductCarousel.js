@@ -8,7 +8,7 @@ export class ProductCarousel extends React.Component {
         <div className="row">
           <section className="col-12">
             <div className="btn-toolbar justify-content-center mb-2" aria-label="All Product Categories">
-              <div className="btn-group btn-group-lg d-none d-md-block">
+              <div className="btn-group d-none d-md-block product-carousel-btn-lg">
                 <button data-target="#productCarousel" data-slide-to="0" className="btn btn-outline-primary custom-button-width">Apparel</button>
                 <button data-target="#productCarousel" data-slide-to="1" className="btn btn-outline-secondary custom-button-width">Headwear</button>
                 <button data-target="#productCarousel" data-slide-to="2" className="btn btn-outline-success custom-button-width">Bags</button>
@@ -16,13 +16,13 @@ export class ProductCarousel extends React.Component {
                 <button data-target="#productCarousel" data-slide-to="4" className="btn btn-outline-warning custom-button-width">Technology</button>
                 <button data-target="#productCarousel" data-slide-to="5" className="btn btn-outline-info custom-button-width">Writing</button>
               </div>
-              <div className="d-block d-md-none ">
-                <button data-target="#productCarousel" data-slide-to="0" className="col-4 btn-sm btn-outline-primary custom-button-width">Apparel</button>
-                <button data-target="#productCarousel" data-slide-to="1" className="col-4 btn-sm btn-outline-secondary custom-button-width">Headwear</button>
-                <button data-target="#productCarousel" data-slide-to="2" className="col-4 btn-sm btn-outline-success custom-button-width">Bags</button>
-                <button data-target="#productCarousel" data-slide-to="3" className="col-4 btn-sm btn-outline-danger custom-button-width">Drinkware</button>
-                <button data-target="#productCarousel" data-slide-to="4" className="col-4 btn-sm btn-outline-warning custom-button-width">Technology</button>
-                <button data-target="#productCarousel" data-slide-to="5" className="col-4 btn-sm btn-outline-info custom-button-width">Writing</button>
+              <div className="d-block d-md-none product-carousel-btn-sm">
+                <button data-target="#productCarousel" data-slide-to="0" className="col-4 btn-outline-primary custom-button-width">Apparel</button>
+                <button data-target="#productCarousel" data-slide-to="1" className="col-4 btn-outline-secondary custom-button-width">Headwear</button>
+                <button data-target="#productCarousel" data-slide-to="2" className="col-4 btn-outline-success custom-button-width">Bags</button>
+                <button data-target="#productCarousel" data-slide-to="3" className="col-4 btn-outline-danger custom-button-width">Drinkware</button>
+                <button data-target="#productCarousel" data-slide-to="4" className="col-4 btn-outline-warning custom-button-width">Technology</button>
+                <button data-target="#productCarousel" data-slide-to="5" className="col-4 btn-outline-info custom-button-width">Writing</button>
               </div>
 
 

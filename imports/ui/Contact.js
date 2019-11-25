@@ -19,31 +19,48 @@ export class Contact extends React.Component {
     return (
       <div>
         <SiteHeader title="LSM" />
-        <div className="container content-container">
-          <div className="row pt-4">
-            <div className="col-sm-3">
-              <h3>Contact</h3>
-              <ul className="nav nav-pills flex-column">
-                <li className="nav-item">
-                  <a className="nav-link disabled" href="#">(905) 555-5555</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">email@example.com</a>
-                </li>
-              </ul>
-              <hr/>
-              <h3>Hours</h3>
-              <ul className="nav nav-pills flex-column">
-                <li className="nav-item">
-                  <a className="nav-link disabled">Mon-Fri</a>
-                  <a className="nav-link disabled" href="#">9am-5pm</a>
-                </li>
-              </ul>
-            </div>
-            <div className="col-sm-9">
-              <ContactMap/>
-            </div>
+        <div className="container content-container page-section">
+          <div className="row">
+            <section className="col-12">
+              <div className="justify-content-center">
+                <div className="jumbotron mx-auto-bg-white">
+
+                  <div className="row pt-4">
+                    <div className="col-sm-3">
+                      <h3>Contact</h3>
+                      <ul className="nav nav-pills flex-column">
+                        <li className="nav-item">
+                          <a className="nav-link disabled" href="#">(905) 555-5555</a>
+                        </li>
+                        <li className="nav-item">
+                          <a className="nav-link" href="#">email@example.com</a>
+                        </li>
+                      </ul>
+                      <hr/>
+                      <h3>Hours</h3>
+                      <ul className="nav nav-pills flex-column">
+                        <li className="nav-item">
+                          <a className="nav-link disabled">Mon-Fri</a>
+                          <a className="nav-link disabled" href="#">9am-5pm</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="col-sm-9">
+                      <ContactMap/>
+                    </div>
+                  </div>
+
+
+
+
+                </div>
+              </div>
+            </section>
           </div>
+
+
+
+
         </div>
         <SiteFooter/>
       </div>
