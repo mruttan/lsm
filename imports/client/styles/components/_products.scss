@@ -1,0 +1,36 @@
+//brands css
+.brand-image {
+  max-width: 6rem;
+  box-sizing: border-box;
+
+}
+
+.brands-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+
+.list-group-flush .list-group-item:first-child {
+  border-top: 0 !important;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 60vw;
+}
+
+.product-image {
+  max-width: 15rem;
+}
+
+.product-brand {
+  max-width: 5rem;
+  padding-top: 1rem;
+  vertical-align: middle;
+}
