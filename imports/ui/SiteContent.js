@@ -107,48 +107,48 @@ export class SiteContent extends React.Component {
         {/* Beginning of Horizantal cards, to be used when in mobile view.*/}
         <div className="d-block d-md-none">
           <div className="row mt-5">
-            <div class="card mb-3">
-              <div class="row no-gutters">
-                <div class="col-4 my-auto">
+            <div className="card mb-3">
+              <div className="row no-gutters">
+                <div className="col-4 my-auto">
                   <img className="card-img" src="/images/services/fulfillment.png"/>
                 </div>
-                <div class="col-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <div className="col-8">
+                  <div className="card-body">
+                    <h5 className="card-title">Card title</h5>
+                    <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div className="row mt-2">
-            <div class="card mb-3">
-              <div class="row no-gutters">
-                <div class="col-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <div className="card mb-3">
+              <div className="row no-gutters">
+                <div className="col-8">
+                  <div className="card-body">
+                    <h5 className="card-title">Card title</h5>
+                    <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                   </div>
                 </div>
-                <div class="col-4 my-auto">
+                <div className="col-4 my-auto">
                   <img className="card-img" src="/images/services/fulfillment.png"/>
                 </div>
               </div>
             </div>
           </div>
           <div className="row mt-2">
-            <div class="card mb-3">
-              <div class="row no-gutters">
-                <div class="col-4 my-auto">
+            <div className="card mb-3">
+              <div className="row no-gutters">
+                <div className="col-4 my-auto">
                   <img className="card-img" src="/images/services/fulfillment.png"/>
                 </div>
-                <div class="col-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <div className="col-8">
+                  <div className="card-body">
+                    <h5 className="card-title">Card title</h5>
+                    <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                   </div>
                 </div>
               </div>
