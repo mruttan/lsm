@@ -15,7 +15,7 @@ export class HomePage extends React.Component {
     return (
       <div>
         <SiteHeader title="LSM" />
-        <MyCarousel/>
+        {/* <MyCarousel/> */}
         <SiteContent/>
         <SiteFooter/>
       </div>
