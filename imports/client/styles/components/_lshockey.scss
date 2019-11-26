@@ -16,3 +16,55 @@
   padding: 20px 0;
   font-size: 30px;
 }
+
+
+
+
+header.masthead {
+  text-align: center;
+  color: white;
+  // background-image: url('../img/header-bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  .intro-text {
+    .intro-lead-in {
+      font-size: 22px;
+      font-style: italic;
+      line-height: 22px;
+      @include serif-font;
+    }
+    .intro-heading {
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 50px;
+      @include heading-font;
+    }
+  }
+}
+@media(min-width:768px) {
+  header.masthead {
+    .intro-text {
+      .intro-lead-in {
+        font-size: 40px;
+        font-style: italic;
+        line-height: 40px;
+        @include serif-font;
+      }
+      .intro-heading {
+        font-size: 75px;
+        font-weight: 700;
+        line-height: 75px;
+        @include heading-font;
+      }
+    }
+  }
+}
+
+
+// Styling for the services section
+.service-heading {
+  margin: 15px 0;
+  text-transform: none;
+}
