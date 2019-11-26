@@ -1,6 +1,10 @@
 // @import './variables';
 // @import './mixins/media-query-mixins';
+
 @import './base';
+
+@import './mixins/mixins';
+
 @import './components/aboutus';
 @import './components/carousel';
 @import './components/contact';
@@ -8,4 +12,4 @@
 @import './components/homepage';
 @import './components/navbar';
 @import './components/products';
-@import'./components/lshockey';
+@import './components/lshockey';
