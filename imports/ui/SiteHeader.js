@@ -31,6 +31,9 @@ class SiteHeader extends React.Component {
           <div className="collapse navbar-collapse flex-grow-0" id="toggleNav">
             <ul className="navbar-nav">
               <li className="nav-item active">
+                <Link to="/" className="nav-link">Home</Link>
+              </li>
+              <li className="nav-item active">
                 <Link to="/about" className="nav-link">About Us</Link>
               </li>
               <li className="nav-item active">
@@ -38,6 +41,9 @@ class SiteHeader extends React.Component {
               </li>
               <li className="nav-item active">
                 <Link to="/contact" className="nav-link">Contact</Link>
+              </li>
+              <li className="nav-item active">
+                <Link to="/lshockey" className="nav-link">Hockey Program</Link>
               </li>
             </ul>
           </div> {/* collapse */}

@@ -1,10 +1,9 @@
 import React from "react";
-import { Link, withRouter } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 
 import SiteFooter from "./SiteFooter";
 import SiteHeader from "./SiteHeader";
 import BrandList from "./BrandList";
-import ProductList from "./ProductList";
 import { STATIC_DATA } from "./StaticData";
 import { STATIC_BRANDS } from "./StaticBrands";
 import { ProductCarousel } from "./ProductCarousel";
@@ -31,14 +30,14 @@ class Products extends React.Component {
     return (
       <div>
         <SiteHeader title="LSM" />
-        <section class="page-section cta">
-          <div class="container">
-            <div class="row">
-              <div class="col-xl-12 mx-auto">
-                <div class="cta-inner text-center rounded bg-white">
-                  <div class="row">
-                    <div class="col-xl-12 text-center">
-                      <h2 class="section-heading text-uppercase">Products</h2>
+        <section className="page-section cta">
+          <div className="container">
+            <div className="row">
+              <div className="col-xl-12 mx-auto">
+                <div className="cta-inner text-center rounded bg-white">
+                  <div className="row">
+                    <div className="col-xl-12 text-center">
+                      <h2 className="section-heading text-uppercase">Products</h2>
                     </div>
                   </div>
                   <div className="mt-5 mb-5">
@@ -46,7 +45,7 @@ class Products extends React.Component {
                   </div>
                   <hr className="my-4" />
                   <div className="row mt-5">
-                    <h2 class="section-heading text-uppercase text-center mx-auto">
+                    <h2 className="section-heading text-uppercase text-center mx-auto">
                       Brand Partners
                     </h2>
                   </div>

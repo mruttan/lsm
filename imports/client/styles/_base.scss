@@ -1,6 +1,10 @@
+html {
+  scroll-behavior: smooth;
+}
+
 //this is set to the same height as the navbar
 body {
-  background-color: #00a4e3 !important;
+  background-color: rgba(163, 159, 159, 0.455) !important;
   padding-top: 98px;
   @media (max-width: 768px) {
     padding-top: 90px;
