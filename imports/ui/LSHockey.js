@@ -17,67 +17,94 @@ export class LSHockey extends React.Component {
       <div>
         <SiteHeader title="LSM" />
 
-        <header class="masthead">
-          <div class="container mt-5">
-            <div class="intro-text">
-              <div class="intro-lead-in">Welcome To Our Studio!</div>
-              <div class="intro-heading text-uppercase">
-                It's Nice To Meet You
-              </div>
-            </div>
+        <header className="masthead">
+          <div className="container d-flex align-items-center flex-column">
+            <img
+              className="lshockeylogo mt-5"
+              src="/images/logos/LionsShareHockeyLogo.png"
+              alt=""
+            />
           </div>
         </header>
 
-        <section class="page-section cta">
-          <div class="container">
-            <div class="row">
-              <div class="col-xl-9 mx-auto">
-                <div class="cta-inner text-center rounded">
-
-                  <div class="row">
-                    <div class="col-xl-12 text-center">
-                      <h2 class="section-heading text-uppercase">Services</h2>
-                      <h3 class="section-subheading text-muted">
-                        Lorem ipsum dolor sit amet consectetur.
-                      </h3>
+        <section className="page-section cta mt-0">
+          <div className="container">
+            <div className="row">
+              <div className="col-xl-9 mx-auto">
+                <div className="cta-inner text-center rounded bg-white">
+                  <div className="row">
+                    <div className="col-xl-12 text-center">
+                      <h2 className="section-heading text-uppercase">
+                        Hockey Program
+                      </h2>
                     </div>
                   </div>
-                  <div class="row text-center">
-                    <div class="col-md-4">
-                      <span class="fa-stack fa-4x">
-                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-                      </span>
-                      <h4 class="service-heading">E-Commerce</h4>
-                      <p class="text-muted">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Minima maxime quam architecto quo inventore harum
-                        ex magni, dicta impedit.
+                  <div className="row text-center mt-3">
+                    <div className="col">
+                      <p className="text-muted">
+                        blurb about what the hockey program is about 
+                        blurb about what the hockey program is about 
+                        blurb about what the hockey program is about 
+                        blurb about what the hockey program is about 
+                        blurb about what the hockey program is about 
+                        blurb about what the hockey program is about 
+                        blurb about what the hockey program is about 
+                        blurb about what the hockey program is about 
+                        blurb about what the hockey program is about 
+                        blurb about what the hockey program is about 
+                        blurb about what the hockey program is about 
+                        blurb about what the hockey program is about 
+                        blurb about what the hockey program is about 
                       </p>
                     </div>
-                    <div class="col-md-4">
-                      <span class="fa-stack fa-4x">
-                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
-                      </span>
-                      <h4 class="service-heading">Responsive Design</h4>
-                      <p class="text-muted">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Minima maxime quam architecto quo inventore harum
-                        ex magni, dicta impedit.
-                      </p>
+                  </div>
+                  <hr className="my-4" />
+
+                  <div className="row mt-3">
+                    <div className="col text-center">
+                      <h4 className="service-heading">Present Programs</h4>
                     </div>
-                    <div class="col-md-4">
-                      <span class="fa-stack fa-4x">
-                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-                      </span>
-                      <h4 class="service-heading">Web Security</h4>
-                      <p class="text-muted">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Minima maxime quam architecto quo inventore harum
-                        ex magni, dicta impedit.
-                      </p>
+                  </div>
+                  <div className="row mt-2">
+                    <div className="col-6">
+                      <img
+                        className="programlogo"
+                        src="/images/lshockey/auroratigers.jpg"
+                        alt=""
+                      />
+                      <p>Aurora Tigers</p>
+                    </div>
+                    <div className="col-6">
+                      <img
+                        className="programlogo"
+                        src="/images/lshockey/georginagoldenhawks.png"
+                        alt=""
+                      />
+                      <p>Georgina Golden Hawks</p>
+                    </div>
+                  </div>
+
+                  <div className="row mt-3">
+                    <div className="col text-center">
+                      <h4 className="service-heading">Past Programs</h4>
+                    </div>
+                  </div>
+                  <div className="row mt-2">
+                    <div className="col-6">
+                      <img
+                        className="programlogo"
+                        src="/images/lshockey/newmarketredmen.jpg"
+                        alt=""
+                      />                      
+                      <p>Newmarket Redmen</p>                      
+                    </div>
+                    <div className="col-6">
+                      <img
+                        className="programlogo"
+                        src="/images/lshockey/yorksimcoeexpress.jpg"
+                        alt=""
+                      />
+                      <p>York Simcoe Express</p>
                     </div>
                   </div>
                 </div>
