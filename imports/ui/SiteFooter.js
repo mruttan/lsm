@@ -9,12 +9,13 @@ class SiteFooter extends React.Component {
           <div className="row">
             <div className="col location text-center">
               <h4 className="mt-5">Location</h4>
-              <p>16610, Bayview Ave, Newmarket</p>
+              <p className="mb-0">16610 Bayview Ave U # 8</p>
+              <p>Newmarket, ON - L3X 1X3</p>
             </div>
             <div className="col location text-center">
               <h4 className="mt-5">Contact</h4>
-              <p className="mb-0"><i className="fa fa-phone mr-3"></i>(905) 555-5555</p>
-              <p><i className="fa fa-envelope-o mr-3"></i>email@example.com</p>
+              <p className="mb-0">Tel # 905-235-5775</p>
+              <p><i className="fa fa-envelope-o mr-3"></i>laurie@lions-sharemktg.com</p>
             </div>
           </div>
           <div className="row mt-2">
