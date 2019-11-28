@@ -31,10 +31,10 @@ export class Contact extends React.Component {
                       <h3>Contact</h3>
                       <ul className="nav nav-pills flex-column">
                         <li className="nav-item">
-                          <a className="nav-link disabled" href="#">(905) 555-5555</a>
+                          <a className="nav-link disabled" href="#">Tel # 905-235-5775</a>
                         </li>
                         <li className="nav-item">
-                          <a className="nav-link" href="#">email@example.com</a>
+                          <a className="nav-link" href="#">laurie@lions-sharemktg.com</a>
                         </li>
                       </ul>
                       <hr/>
@@ -42,7 +42,8 @@ export class Contact extends React.Component {
                       <ul className="nav nav-pills flex-column">
                         <li className="nav-item">
                           <a className="nav-link disabled">Mon-Fri</a>
-                          <a className="nav-link disabled" href="#">9am-5pm</a>
+                          <a className="nav-link disabled" href="#">10:00 am - 12:00 pm</a>
+                          <a className="nav-link disabled" href="#">1:30 pm - 5:00 pm</a>
                         </li>
                       </ul>
                     </div>

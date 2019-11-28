@@ -41,7 +41,7 @@ export class LSHockey extends React.Component {
                   </div>
                   <div className="row text-center mt-3">
                     <div className="col">
-                    <p>
+                      <p>
                         At Lion’s Share our goal is to help you increase your
                         brand's visibility, while generating the highest return
                         on your investment. Our friendly experienced team has
@@ -66,7 +66,6 @@ export class LSHockey extends React.Component {
                         and store to accommodate our hockey association members.
                       </p>
                     </div>
-                  
                   </div>
                 </div>
               </div>

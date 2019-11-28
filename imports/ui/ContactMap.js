@@ -35,8 +35,8 @@ export class ContactMap extends React.Component {
       <main>
         <div>
           <h2>Location</h2>
-            <h5>16610 Bayview Ave</h5>
-            <h5>Just south of Mulock & Bayview</h5>
+            <h5>16610 Bayview Ave U # 8</h5>
+            <h5>Newmarket, ON - L3X 1X3</h5>
             <div id="map"></div>
             <hr className="d-sm-none"/>
 
