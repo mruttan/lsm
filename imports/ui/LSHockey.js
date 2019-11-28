@@ -41,71 +41,32 @@ export class LSHockey extends React.Component {
                   </div>
                   <div className="row text-center mt-3">
                     <div className="col">
-                      <p className="text-muted">
-                        blurb about what the hockey program is about 
-                        blurb about what the hockey program is about 
-                        blurb about what the hockey program is about 
-                        blurb about what the hockey program is about 
-                        blurb about what the hockey program is about 
-                        blurb about what the hockey program is about 
-                        blurb about what the hockey program is about 
-                        blurb about what the hockey program is about 
-                        blurb about what the hockey program is about 
-                        blurb about what the hockey program is about 
-                        blurb about what the hockey program is about 
-                        blurb about what the hockey program is about 
-                        blurb about what the hockey program is about 
+                    <p>
+                        At Lion’s Share our goal is to help you increase your
+                        brand's visibility, while generating the highest return
+                        on your investment. Our friendly experienced team has
+                        access to thousands of quality promotional products. We
+                        will take the time to define your requirements, then
+                        make suggestions to maximize the impact of your custom
+                        order.
+                      </p>
+                      <p className="mb-2">
+                        We practice excellent customer service in each detail to
+                        meet all of your needs and earn your trust.
+                      </p>
+                      <p className="mb-2">
+                        We also offer quality Heat transfer, screen printing and
+                        embroidery!
+                      </p>
+                      <p className="mb-2">
+                        We specialize in custom hockey association programs for
+                        apparel and uniforms. Starting with putting together a
+                        proposed program, pricing and terms, to fittings to
+                        production and finally delivery! We have a full showroom
+                        and store to accommodate our hockey association members.
                       </p>
                     </div>
-                  </div>
-                  <hr className="my-4" />
-
-                  <div className="row mt-3">
-                    <div className="col text-center">
-                      <h4 className="service-heading">Present Programs</h4>
-                    </div>
-                  </div>
-                  <div className="row mt-2">
-                    <div className="col-6">
-                      <img
-                        className="programlogo"
-                        src="/images/lshockey/auroratigers.jpg"
-                        alt=""
-                      />
-                      <p>Aurora Tigers</p>
-                    </div>
-                    <div className="col-6">
-                      <img
-                        className="programlogo"
-                        src="/images/lshockey/georginagoldenhawks.png"
-                        alt=""
-                      />
-                      <p>Georgina Golden Hawks</p>
-                    </div>
-                  </div>
-
-                  <div className="row mt-3">
-                    <div className="col text-center">
-                      <h4 className="service-heading">Past Programs</h4>
-                    </div>
-                  </div>
-                  <div className="row mt-2">
-                    <div className="col-6">
-                      <img
-                        className="programlogo"
-                        src="/images/lshockey/newmarketredmen.jpg"
-                        alt=""
-                      />                      
-                      <p>Newmarket Redmen</p>                      
-                    </div>
-                    <div className="col-6">
-                      <img
-                        className="programlogo"
-                        src="/images/lshockey/yorksimcoeexpress.jpg"
-                        alt=""
-                      />
-                      <p>York Simcoe Express</p>
-                    </div>
+                  
                   </div>
                 </div>
               </div>

@@ -29,7 +29,7 @@ export class SiteContent extends React.Component {
             <div className="intro">
               <img
                 className="intro-img img-fluid mb-3 mb-lg-0 rounded"
-                src="/images/homepage/lsm-store.png"
+                src="/images/homepage/storefront.jpg"
                 alt=""
               />
               <div className="intro-text left-0 text-center bg-faded p-5 rounded">
@@ -120,12 +120,6 @@ export class SiteContent extends React.Component {
               <div className="col-lg-6 order-lg-1">
                 <div className="p-5">
                   <h2 className="display-4">Heat Transfer</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Quod aliquid, mollitia odio veniam sit iste esse assumenda
-                    amet aperiam exercitationem, ea animi blanditiis recusandae!
-                    Ratione voluptatum molestiae adipisci, beatae obcaecati.
-                  </p>
                   <hr />
                   <a href="#services">Services</a>
                 </div>
@@ -149,12 +143,6 @@ export class SiteContent extends React.Component {
               <div className="col-lg-6">
                 <div className="p-5">
                   <h2 className="display-4">Embroidery</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Quod aliquid, mollitia odio veniam sit iste esse assumenda
-                    amet aperiam exercitationem, ea animi blanditiis recusandae!
-                    Ratione voluptatum molestiae adipisci, beatae obcaecati.
-                  </p>
                   <hr />
                   <a href="#services">Services</a>
                 </div>
@@ -178,12 +166,6 @@ export class SiteContent extends React.Component {
               <div className="col-lg-6 order-lg-1">
                 <div className="p-5">
                   <h2 className="display-4">Custom Apparel</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Quod aliquid, mollitia odio veniam sit iste esse assumenda
-                    amet aperiam exercitationem, ea animi blanditiis recusandae!
-                    Ratione voluptatum molestiae adipisci, beatae obcaecati.
-                  </p>
                   <hr />
                   <a href="#services">Services</a>
                 </div>
@@ -207,12 +189,6 @@ export class SiteContent extends React.Component {
               <div className="col-lg-6">
                 <div className="p-5">
                   <h2 className="display-4">Screen Printing</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Quod aliquid, mollitia odio veniam sit iste esse assumenda
-                    amet aperiam exercitationem, ea animi blanditiis recusandae!
-                    Ratione voluptatum molestiae adipisci, beatae obcaecati.
-                  </p>
                   <hr />
                   <a href="#services">Services</a>
                 </div>
@@ -236,12 +212,6 @@ export class SiteContent extends React.Component {
               <div className="col-lg-6 order-lg-1">
                 <div className="p-5">
                   <h2 className="display-4">Fulfillment</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Quod aliquid, mollitia odio veniam sit iste esse assumenda
-                    amet aperiam exercitationem, ea animi blanditiis recusandae!
-                    Ratione voluptatum molestiae adipisci, beatae obcaecati.
-                  </p>
                   <hr />
                   <a href="#services">Services</a>
                 </div>
@@ -265,12 +235,6 @@ export class SiteContent extends React.Component {
               <div className="col-lg-6">
                 <div className="p-5">
                   <h2 className="display-4">E-Commerce</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Quod aliquid, mollitia odio veniam sit iste esse assumenda
-                    amet aperiam exercitationem, ea animi blanditiis recusandae!
-                    Ratione voluptatum molestiae adipisci, beatae obcaecati.
-                  </p>
                   <hr />
                   <a href="#services">Services</a>
                 </div>
